@@ -1,8 +1,9 @@
 body{
-	padding-top: 50px;
+	padding-top: 110px;
   	padding-bottom: 50px; 
   	background: #679DFA;
 }
+
 .wrapper {
   .make-row();
 }

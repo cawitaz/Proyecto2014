@@ -1,25 +1,17 @@
 ﻿<!DOCTYPE html><html lang="es">
 <head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Sistema de Control de Flota Vehicular de la Alcaldía Municipal de Mejicanos</title>
-
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <script src="./js/jquery-2.1.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script> 
-
+  <?php include("template/encabezado.php"); ?>
 </head>
 
 <body>
-
+  <?php
+    session_start();
+    $_SESSION['tipo'] = 0;  
+  ?>
 <div id="marco" align="center">
     <form id="form1" name="form1" method="post" action="">
         <div>
-          <img src="image/escudo_alcaldiamejicanos_es.png"  class="img-responsive" alt="Alcaldia" />
+          <img src="image/encabezado_es.png"  class="img-responsive" alt="Alcaldia" />
           <h3>Acceder</h3>
         </div>
         
