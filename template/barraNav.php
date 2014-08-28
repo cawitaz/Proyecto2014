@@ -18,7 +18,7 @@
   <div class="collapse navbar-collapse navbar-ex6-collapse navbar-inverse">
     <ul class="nav navbar-nav">
       <!--  Iniciamos con el menú-->
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+      <li class="active"><a href="menu.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
               
       <!--Inicio de Modulo Gestión de Usuarios-->
       <li class="dropdown " id="menu_usuario">
@@ -27,10 +27,10 @@
           Usuarios <b class="caret"></b>
         </a>
         <ul class="dropdown-menu" >
-          <li><a href="#">Agregar vehículo</a></li>
-          <li><a href="#">Eliminar vehículo</a></li>
-          <li><a href="#">Modificar datos</a></li>
-          <li><a href="#">Consultar datos</a></li>
+          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/crear.php');">Agregar usuario</a></li>
+          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/modificar.php');">Modificar usuario</a></li>
+          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/eliminar.php');">Eliminar datos</a></li>
+          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/consultar.php');">Consultar datos</a></li>
         </ul>
       </li> <!--Fin de Modulo-->
 

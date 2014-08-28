@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
   <?php include("template/encabezado.php"); ?>
 </head>
@@ -19,7 +19,7 @@
   		<label class = "lead" for="user">Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
   		<input class="input-lg" type="text" id="user" maxlength="10" />
   		<br>
-  		<label class = "lead" for="pass2">Contraseña:&nbsp;</label>
+  		<label class = "lead" for="pass">Contraseña:&nbsp;</label>
   		<input class="input-lg" name="pass" type="password" id="pass" />
   		<br>
   		<input class="btn-primary" name="Enviar" type="submit" id="Enviar" value="Entrar"  />
