@@ -42,30 +42,59 @@
           <span class="glyphicon glyphicon-road"></span>
           Vehículo<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Agregar vehículo</a></li>
-          <li><a href="#">Eliminar vehículo</a></li>
-         
-          <li><a href="#">Modificar vehículo</a></li>
-          <li><a href="#">Eliminar vehículo</a></li>
+
+          <!-- Creando un submenu Gestion de vehiculo-->
+
+          <li class="dropdown-submenu"> <a href="#">Gesti&#243n de Vehículo</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Agregar vehículo</a></li>
+              <li><a href="#">Eliminar vehículo</a></li>
+             
+              <li><a href="#">Modificar vehículo</a></li>
+              <li><a href="#">Eliminar vehículo</a></li>
+            </ul>
+          </li>
+
+          <!-- Submenu peticion de vehiculo -->
+          <li class="dropdown-submenu"> <a href="#">Ver peticion de vehículo</a>
+            <ul class="dropdown-menu">
+            
+              <li><a href="#">Asignar vehículo</a></li>
+              <li><a href="#">Redactar Permiso</a></li>
+              <li><a href="#">Desplegar estado</a></li>
+            </ul>
+          </li>
+
+          <!-- Submenu Gestionar poliza -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Poliza</a>
+            <ul class="dropdown-menu">
+            
+            <li><a href="#">Ingresar p&#243liza</a></li>
+            <li><a href="#">Modificar p&#243liza</a></li>
+            <li><a href="#">Eliminar p&#243liza</a></li>
+           </ul>
+          </li>
+
+          <!-- Submenu Gestionar poliza -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Bitacora</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">Bitacora</a></li>
+            <li><a href="#">Ingresar registro</a></li>
+            <li><a href="#">Modificar registro</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Submenu Gestionar esquela -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Esquelas</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ingresar esquelas</a></li>
+              <li><a href="#">Modificar datos de esquela</a></li>
+            </ul>
+          </li>
+
           <li class="divider"></li>
-          <li><a href="#">Ver peticion de vehículo</a></li>
-          <li><a href="#">Asignar vehículo</a></li>
-          <li><a href="#">Redactar Permiso</a></li>
-          <li><a href="#">Desplegar estado</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Ingresar p&#243liza</a></li>
-          <li><a href="#">Modificar p&#243liza</a></li>
-          <li><a href="#">Eliminar p&#243liza</a></li>
           
-          <li class="divider"></li>
-          <li><a href="#">Bitacora</a></li>
-          <li><a href="#">Ingresar registro</a></li>
-          <li><a href="#">Modificar registro</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Esquelas</a></li>
-          <li><a href="#">Ingresar esquelas</a></li>
-          <li><a href="#">Modificar datos de esquela</a></li>
-          <li class="divider"></li>
           <li><a href="#">Cambio de estado</a></li>
           
         </ul>
@@ -80,11 +109,19 @@
           Conductores<b class="caret"></b></a>
 
         <ul class="dropdown-menu">
-          <li><a href="#">Ingresar Conductor</a></li>
-          <li><a href="#">Eliminar Conductor</a></li>
-          <li><a href="#">Modificar Conductor</a></li>
-          <li><a href="#">Consultar Conductor</a></li>
+
+          <!-- Submenu Gestionar conductor -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Conductor</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ingresar Conductor</a></li>
+              <li><a href="#">Eliminar Conductor</a></li>
+              <li><a href="#">Modificar Conductor</a></li>
+              <li><a href="#">Consultar Conductor</a></li>
+            </ul>
+          </li>
+
           <li class="divider"></li>
+
           <li><a href="#">Desplegar Conductor</a></li>
           <li><a href="#">Autorizar o Rechazar</a></li>
           
@@ -124,9 +161,15 @@
         <ul class="dropdown-menu">
           <li><a href="#">Gestionar hoja de vida</a></li>
           <li class="divider"></li>
-          <li><a href="#">Reparaci&#243n/Mantenimiento</a></li>
-          <li><a href="#">Registro materiales utilizados</a></li>
-          <li><a href="#">Registro trabajo realizado</a></li>
+          <!-- Submenu Mantenimiento y reparacion -->
+          <li class="dropdown-submenu"> <a href="#">Reparaci&#243n/Mantenimiento</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Registro materiales utilizados</a></li>
+              <li><a href="#">Registro trabajo realizado</a></li>
+            </ul>
+          </li><!--Fin de Modulo-->
+
+
           <li class="divider"></li>
           <li><a href="#">Desplegar solicitud de reparación</a></li>
           <li><a href="#">Autorizar y Rechazar</a></li>
