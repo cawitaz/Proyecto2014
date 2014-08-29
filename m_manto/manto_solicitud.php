@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Desplegar solicitud de reparación</label>
 	</div>
 </body>
 </html>

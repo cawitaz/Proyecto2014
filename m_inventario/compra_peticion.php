@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Elaborar peticion de compra</label>
 	</div>
 </body>
 </html>

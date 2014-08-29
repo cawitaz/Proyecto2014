@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Eliminar poliza del vehiculo</label>
 	</div>
 </body>
 </html>

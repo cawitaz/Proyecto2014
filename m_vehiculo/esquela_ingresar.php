@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Ingresar esquela</label>
 	</div>
 </body>
 </html>

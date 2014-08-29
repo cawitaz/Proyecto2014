@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Redactar permiso - Ver petición de vehículo</label>
 	</div>
 </body>
 </html>

@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Modificar esquela del Vehículo</label>
 	</div>
 </body>
 </html>

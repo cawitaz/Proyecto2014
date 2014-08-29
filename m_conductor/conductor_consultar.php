@@ -5,7 +5,8 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Consultar conductor</label>
+	
 	</div>
 </body>
 </html>

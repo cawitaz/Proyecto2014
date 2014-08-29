@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> Estado de las compras</label>
 	</div>
 </body>
 </html>

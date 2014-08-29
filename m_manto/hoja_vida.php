@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div align="center">
-	<label> Crear Usuario</label>
+	<label> gestionar Hoja de vida</label>
 	</div>
 </body>
 </html>
