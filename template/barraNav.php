@@ -3,10 +3,29 @@
 <nav  class="navbar navbar-default navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
   
+
+<header>
+  <div class="nav navbar-static-top">
+    <span class="navbar-brand  text-right" ><strong>Control de Flota</strong></span> 
+      <li>
+        <a  class="dropdown " data-toggle="dropdown"><div align="right">
+          <span class="glyphicon glyphicon-user"></span>
+          Usuario <b class="caret"></b></div>
+        </a>
+
+        <ul class="dropdown-menu pull-right">
+          <li><a href="#"><span class="glyphicon glyphicon-cog"> Perfil</span></a></li>
+          <li class="divider"></li>          
+          <li><a href="index.php" ><span class="glyphicon glyphicon-off"> Salir</span></a></li>
+        </ul>
+      </li>
+    
+  </div>
+</header>
   <div class="navbar-header " >
 
-    <span class="navbar-brand  text-right" ><strong>Control de Flota</strong></span> 
-    <button type="button" class="navbar-toggle text-left" data-toggle="collapse" data-target=".navbar-collapse">
+    
+    <button id="menu" type="button" class="navbar-toggle text-left visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="sr-only"> </span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -19,7 +38,7 @@
     <ul class="nav navbar-nav">
       <!--  Iniciamos con el menú-->
       <li class="active"><a href="menu.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-              
+
       <!--Inicio de Modulo Gestión de Usuarios-->
       <li class="dropdown " id="menu_usuario">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -28,9 +47,7 @@
         </a>
         <ul class="dropdown-menu" >
           <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_crear.php');">Agregar usuario</a></li>
-          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_modificar.php');">Modificar usuario</a></li>
-          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_eliminar.php');">Eliminar datos</a></li>
-          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_consultar.php');">Consultar datos</a></li>
+          <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_consultar.php');">Lista de Usuarios</a></li>
         </ul>
       </li> <!--Fin de Modulo-->
 
@@ -192,27 +209,6 @@
     </ul>
   </div>
     <!-- /.navbar-collapse -->
-
-
-
-    <div class="panel-body text-right">
-        
-        <a  class="dropdown-toggle " data-toggle="dropdown">
-          <span class="glyphicon glyphicon-user"></span>
-          Usuario <b class="caret"></b>
-        </a>
-
-        <ul class="dropdown-menu dropdown-menu-right">
-          <li><a href="#">
-            <span class="glyphicon glyphicon-cog"> Perfil</span>
-          </a></li>
-          <li class="divider"></li>          
-          <li>
-            <a href="index.php" ><span class="glyphicon glyphicon-off"> Salir</span></a>
-          </li>
-        </ul>
-      </li>
-    </div>
 
 
 

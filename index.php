@@ -17,10 +17,10 @@
 
       <div id = "entrada">
         <label class = "lead" for="user">Usuario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input class="input-lg" type="text" id="user" maxlength="10" />
+        <input class="input" type="text" id="user" maxlength="10" />
         <br>
       	<label class = "lead" for="pass">Contraseña:&nbsp;</label>
-      	<input class="input-lg" name="pass" type="password" id="pass" />
+      	<input class="input" name="pass" type="password" id="pass" />
       	<br>
       	<input class="btn-primary" name="Enviar" type="submit" id="Enviar" value="Entrar"  />
       	<br>

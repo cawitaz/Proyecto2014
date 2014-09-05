@@ -18,5 +18,7 @@
         function cargar(div, formu)
             {
                  $(div).load(formu);
+                 if($( window ).width() < 768)
+                    $('#menu').click();
             }
     </script>
