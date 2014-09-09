@@ -10,7 +10,7 @@
   ?>
   <div id="marco" align="center">
     <form id="form1" name="form1" method="post" action="">
-      <div>
+      <div style="max-width: 598px">
         <img src="image/encabezado_es.png"  class="img-responsive" alt="Alcaldia" />
         <h3>Acceder</h3>
       </div>

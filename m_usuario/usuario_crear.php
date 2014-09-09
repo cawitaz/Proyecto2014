@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="container show-top-margin separate-rows tall-rows">
-		<div class="panel panel-primary col-md-5 col-md-offset-3" >
+		<div class="panel panel-primary col-md-6 col-md-offset-3" >
 			<div class="panel-heading "><h4>Nuevo Usuario</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
@@ -40,6 +40,7 @@
 								placeholder="Ingrese su Email"></div>
 				</div><!--Fin del email -->
 
+				<br>
 
 				<div class="row">
 					<div ><label for="tipoUsuario" class="controllabel">Tipo de usuario</label>
@@ -58,12 +59,13 @@
 
 					
 				<div class="row center-text">
-				  <div class="col-md-7"> <input type="button" value="Cancelar" 
-				  	onClick="cargar('#panel1','archivos/inicio.php');" ></div>
-				  	
-				  <div class="col-md-1"> <input type="button" value="Guardar">
-				  </div>
-
+					<br>
+					
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
+						onclick="limpiar('#panel1');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					</div>
+					<br>
 				</div>
 
 					

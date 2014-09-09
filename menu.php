@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
 <head>
 	<?php include("template/encabezado.php"); ?>
   	
 </head>
 <body>
-	
-		<div class="panel-heading">
-			<?php include("template/barraNav.php"); ?>
-		</div>
 
+	
+		<?php include("template/barraNav.php"); ?>
+	
+	
+	
 		<div class="panel-body" id="panel1">
 				<!-- Este menú se cambia con jQuery-->
 		</div>

@@ -4,28 +4,33 @@
   <!-- Brand and toggle get grouped for better mobile display -->
   
 
-<header>
   <div class="nav navbar-static-top">
-    <span class="navbar-brand  text-right" ><strong>Control de Flota</strong></span> 
-      <li>
-        <a  class="dropdown " data-toggle="dropdown"><div align="right">
-          <span class="glyphicon glyphicon-user"></span>
-          Usuario <b class="caret"></b></div>
-        </a>
+        <div class="row ">
+          <div class="col-xs-7 col-sm-9 col-md-10" id="Titulo">
+            <div class="text-left" ><h4><strong>Control de Flota de Veh&#237;culos<span class="hidden-xs"> - Alcaldía Municipal de Mejicanos</span></strong></h4></div>
+          </div>
+          <div class="col-xs-4 col-sm-2  col-md-2 ">
+            <div class="btn-group">
+              <div type="button" class="dropdown-toggle"
+                        data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                  Usuario <span class="caret"></span>
+              </div>
 
-        <ul class="dropdown-menu pull-right">
-          <li><a href="#"><span class="glyphicon glyphicon-cog"> Perfil</span></a></li>
-          <li class="divider"></li>          
-          <li><a href="index.php" ><span class="glyphicon glyphicon-off"> Salir</span></a></li>
-        </ul>
-      </li>
-    
+              <ul class="dropdown-menu" >
+                <li><a href="#"><span class="glyphicon glyphicon-wrench"> Perfil</span></a></li>
+                <li class="divider"></li>
+                <li><a href="index.php"><span class="glyphicon glyphicon-off"> Salir</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
   </div>
-</header>
+
   <div class="navbar-header " >
 
     
-    <button id="menu" type="button" class="navbar-toggle text-left visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
+    <button id="menu" type="button" class="navbar-toggle text-left visible-xs " data-toggle="collapse" data-target=".navbar-collapse">
       <span class="sr-only"> </span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -36,10 +41,10 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex6-collapse navbar-inverse">
     <ul class="nav navbar-nav">
-      <!--  Iniciamos con el menú-->
+      <!--  Iniciamos con el menu-->
       <li class="active"><a href="menu.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
 
-      <!--Inicio de Modulo Gestión de Usuarios-->
+      <!--Inicio de Modulo Gestion de Usuarios-->
       <li class="dropdown " id="menu_usuario">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <span class="glyphicon glyphicon-user"></span>
@@ -53,28 +58,28 @@
 
 
 
-      <!--Inicio de Modulo Vehículo-->
+      <!--Inicio de Modulo Vehiculo-->
       <li class="dropdown" id="menu_vehiculo" role="menu">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
           <span class="glyphicon glyphicon-road"></span>
-          Vehículo<span class="caret"></span></a>
+          Veh&iacute;culo<span class="caret"></span></a>
         <ul class="dropdown-menu">
 
           <!-- Creando un submenu Gestion de vehiculo-->
 
-          <li class="dropdown-submenu"> <a href="#">Gesti&#243n de Vehículo</a>
+          <li class="dropdown-submenu"> <a href="#">Gesti&#243;n de Veh&iacute;culo</a>
             <ul class="dropdown-menu">
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_ingresar.php')">Agregar vehículo</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_eliminar.php')">Eliminar vehículo</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_modificar.php')">Modificar vehículo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_ingresar.php')">Agregar veh&iacute;culo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_eliminar.php')">Eliminar veh&iacute;culo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_modificar.php')">Modificar veh&iacute;culo</a></li>
             </ul>
           </li>
 
           <!-- Submenu peticion de vehiculo -->
-          <li class="dropdown-submenu"> <a href="#">Ver peticion de vehículo</a>
+          <li class="dropdown-submenu"> <a href="#">Ver peticion de veh&iacute;culo</a>
             <ul class="dropdown-menu">
             
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/peticion_asignar.php')">Asignar vehículo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/peticion_asignar.php')">Asignar veh&iacute;culo</a></li>
               <li><a href="#" onclick="cargar('#panel1','m_vehiculo/peticion_redactar.php')">Redactar Permiso</a></li>
               <li><a href="#" onclick="cargar('#panel1','m_vehiculo/peticion_estado.php')">Desplegar estado</a></li>
             </ul>
@@ -84,18 +89,18 @@
           <li class="dropdown-submenu"> <a href="#">Gestionar Poliza</a>
             <ul class="dropdown-menu">
             
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_ingresar.php')">Ingresar p&#243liza</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_modificar.php')">Modificar p&#243liza</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_eliminar.php')">Eliminar p&#243liza</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_ingresar.php')">Ingresar p&#243;liza</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_modificar.php')">Modificar p&#243;liza</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_eliminar.php')">Eliminar p&#243;liza</a></li>
            </ul>
           </li>
 
           <!-- Submenu Gestionar bitacora -->
           <li class="dropdown-submenu"> <a href="#">Gestionar Bitacora</a>
             <ul class="dropdown-menu">
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_ver.php')">Ver bitacora</a></li>
             <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_ingresar.php')">Ingresar registro</a></li>
             <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_modificar.php')">Modificar registro</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_ver.php')">Ver bitacora</a></li>
             </ul>
           </li>
 
@@ -157,11 +162,11 @@
 
           <li class="divider"></li>
           <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_estado.php')">Ver estado de compra</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_peticion.php')">Elaborar petici&#243n de compra</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_peticion.php')">Elaborar petici&#243;n de compra</a></li>
           
           <li class="divider"></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_ingresar.php')">Ingresar Artículo</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_modificar.php')">Modificar Artículo</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_ingresar.php')">Ingresar Art&iacute;culo</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_modificar.php')">Modificar Art&iacute;culo</a></li>
           
         </ul>
       </li><!--Fin de Modulo-->
@@ -177,7 +182,7 @@
           <li><a href="#" onclick="cargar('#panel1','m_manto/hoja_vida.php')">Gestionar hoja de vida</a></li>
           <li class="divider"></li>
           <!-- Submenu Mantenimiento y reparacion -->
-          <li class="dropdown-submenu"> <a href="#">Reparaci&#243n/Mantenimiento</a>
+          <li class="dropdown-submenu"> <a href="#">Reparaci&#243;n/Mantenimiento</a>
             <ul class="dropdown-menu">
               <li><a href="#" onclick="cargar('#panel1','m_manto/registro_materiales.php')">Registro materiales utilizados</a></li>
               <li><a href="#" onclick="cargar('#panel1','m_manto/registro_trabajo.php')">Registro trabajo realizado</a></li>
@@ -186,7 +191,7 @@
 
 
           <li class="divider"></li>
-          <li><a href="#" onclick="cargar('#panel1','m_manto/manto_solicitud.php')">Desplegar solicitud de reparación</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_manto/manto_solicitud.php')">Desplegar solicitud de reparaci&#243;n</a></li>
           <li><a href="#" onclick="cargar('#panel1','m_manto/manto_autoriza.php')">Autorizar y Rechazar</a></li>
           
         </ul>

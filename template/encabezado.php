@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Sistema de Flota Vehicular - Alcald&#237a Municipal de Mejicanos</title>
+    <title>Sistema de Flota Vehicular - Alcald&#237;a Municipal de Mejicanos</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
@@ -20,5 +20,12 @@
                  $(div).load(formu);
                  if($( window ).width() < 768)
                     $('#menu').click();
+            }
+    </script>
+
+     <script type="text/javascript">
+        function limpiar(div)
+            {
+                $(div).empty();
             }
     </script>

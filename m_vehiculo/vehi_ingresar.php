@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="container show-top-margin separate-rows tall-rows">
-		<div class="panel panel-primary col-md-5 col-md-offset-3" >
+		<div class="panel panel-primary col-md-6 col-md-offset-3" >
 			<div class="panel-heading "><h4>Ingreso de Vehículo</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
@@ -23,8 +23,9 @@
 				  <div class="col-md-5"><label for="tipoVehi" class="controllabel hidden-xs">Tipo </label>
 				  </div>
 				  <div class="col-md-3" id="tipoVehi" > 
-				  	<select class="form-control">
-				        <option value="">Lista desplegable normal</option>
+				  	<select id="tipo" class="form-control">
+				        <option value="">opcion 1</option>
+				        <option value="">opcion 2</option>
 				      </select>
 
 				  	<!-- Combobox para el tipo de vehículo--></div>
@@ -91,14 +92,14 @@
 				
 					
 				<div class="row center-text">
-				  <div class="col-md-7"> <input type="button" value="Cancelar" 
-				  	onClick="cargar('#panel1','archivos/inicio.php');" ></div>
-				  	
-				  <div class="col-md-1"> <input type="button" value="Guardar">
-				  </div>
-
+					<br>
+					
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
+						onclick="limpiar('#panel1');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					</div>
+					<br>
 				</div>
-
 					
 				</form>
 			</div>
