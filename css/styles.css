@@ -5,6 +5,20 @@ body{
   background: #679DFA;
 }
 
+.barraLateral{
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+  background: #222;
+}
+
+.panel_limitado{
+  padding-top: 0px;
+  padding-bottom: 0px; 
+  max-width: 598px;
+}
+.boton-buscar{
+  width: 70px;
+  height: 25px;  
+}
 
 .wrapper {
   .make-row();

@@ -4,8 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<div class="container show-top-margin separate-rows tall-rows">
-		<div class="panel panel-primary col-md-6 col-md-offset-3" >
+	<div class="panel panel-primary" >
 			<div class="panel-heading "><h4>Nuevo Usuario</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
@@ -44,17 +43,17 @@
 
 				<div class="row">
 					<div ><label for="tipoUsuario" class="controllabel">Tipo de usuario</label>
-					</div>
-					<div class="checkbox ">
-					  	<label class="checkbox" ><input type="checkbox" id="chek1" value=""> Administrador</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek2" value=""> Opcion 2</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek3" value=""> Opcion 3</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek4" value=""> Opcion 4</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek5" value=""> Opcion 5</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek6" value=""> Opcion 6</label>
-					  	<label class="checkbox" ><input type="checkbox" id="chek7" value=""> Opcion 7</label>
-					</div>
-				   
+						</div>
+					
+						<div class="checkbox">
+						  	<label class="checkbox"><input type="checkbox" id="chek1" value="1"> Administrador</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek2" value="2"> Gerente Administrativo</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek3" value="3"> Gerente de Servicio</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek4" value="4"> Encargado de taller</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek5" value="5"> Activo Fijo</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek6" value="6"> Encargado de Almacén</label>
+						  	<label class="checkbox" ><input type="checkbox" id="chek7" value="7"> Supervisor de conductores</label>
+						</div>
 				</div>
 
 					
@@ -72,7 +71,6 @@
 				</form>
 			</div>
 		</div>
-	</div>
 
 </body>
 </html>

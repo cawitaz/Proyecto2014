@@ -4,8 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<div class="container show-top-margin separate-rows tall-rows">
-		<div class="panel panel-primary col-md-6 col-md-offset-3" >
+	<div class="panel panel-primary" >
 			<div class="panel-heading "><h4>Ingresar Esquela</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
@@ -80,8 +79,7 @@
 					
 				</form>
 			</div>
-		</div>
-	</div>
+		</div>	
 
 </body>
 </html>
