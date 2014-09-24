@@ -12,31 +12,31 @@
 
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="row">
-				  <div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bit&#225cora de veh&#237culo </label>
-				  </div>
-				  <div class="col-md-3" id="idBitacora" > 
-				  	<select class="form-control">
-				        <option value="">Vehículo 1</option>
-				        <option value="">Vehículo 2</option>
-				    </select>
-				  	<!-- Combobox para los distintos conductores--></div>
+					<div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bit&#225cora de veh&#237culo </label>
+				    </div>
+				    <div class="col-md-3" id="idBitacora" > 
+				    	<select class="form-control">
+				    		<option value="">Vehículo 1</option>
+				        	<option value="">Vehículo 2</option>
+				    	</select>
+				    	<!-- Combobox para los distintos conductores-->
+				    </div>
 				</div>
 
 				<div class="row"><!-- Fecha sustraida del sistema -->
-				  <div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
-				  </div>
-				  <div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
-				  	size="25" readonly="readonly" value="Fecha"></div>
+					<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
+					</div>
+					<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
+						size="25" readonly="readonly" value="Fecha">
+					</div>
 				</div>
 
 				<div class="row"><!-- Solicitante -->
 					<div class="col-md-5"><label for="solicita"  class="controllabel hidden-xs">Solicitante</label>
 					</div>
 					<div class="col-md-3">
-						<select id="solicita" class="form-control">
-					  		<option value="">Usuario1</option>
-					        <option value="">Usuario2</option>
-					    </select>
+						<input id="solicita" type="text" class="form-control form-text" 
+						size="25" readonly="readonly" value="Usuario actual">
 					</div>
 				</div>
 				

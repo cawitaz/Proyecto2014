@@ -1,23 +1,23 @@
-﻿
-	<div class="panel panel-primary" >
-			<div class="panel-heading "><h4>Ingresar p&#243;liza de veh&#237;culo</h4></div>
-			<div class="panel-body" align="center">
-				<!-- Inicio del formulario -->
-				<form class="form-horizontal form-inline" role="form">
-
+﻿<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">Opciones</h4>
+				</div>
+				<div class="modal-body">
 					<!-- Inicio de los objetos del formulario mediante filas -->
 					<div class="row">
 						<div class="col-md-5"><label for="idPoliza" class="controllabel hidden-xs">P&#243;liza</label>
 						</div>
 						<div class="col-md-3"><input id="idPoliza" type="text" class="form-control form-text" 
-							size="25" placeholder="Ingrese p&#243;liza"></div>
+							size="25" readonly="readonly" value="Ingrese p&#243;liza"></div>
 					</div>
 
 					<div class="row"><!-- Fecha sustraida del sistema -->
 						<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 						</div>
 						<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
-							size="25" readonly="readonly" value="Fecha"></div>
+							size="25"  value="Fecha"></div>
 					</div>
 
 					<div class="row"><!-- Solicitante -->
@@ -31,7 +31,8 @@
 						    </select>
 						</div>
 					</div>
-					<!-- Inicio de los objetos del formulario mediante filas -->
+
+					<!-- Descripcion -->
 					<div class="row">
 						<div class="col-md-5"><label for="descrip" class="controllabel hidden-xs">Descripci&#243;n</label>
 						</div>
@@ -40,20 +41,17 @@
 						</div>
 					</div>
 
-					<!-- Botones Guardar y cancelar -->
 
-					<div class="row center-text">
-						<br>
-						
-						<div class="col-xs-7 col-sm-7 col-md-7"> 
-							<input type="button" id="cancelar" value="Cancelar" onclick="limpiar('#panel1');" >
-						</div>
-						<div class="col-xs-1 col-md-1"> 
-							<input type="button" value="Guardar">
-						</div>
-						<br>
-					</div>
+				</div>
+				<div class="modal-footer">
 					
-				</form>
-			</div>
-	</div>
+					
+					
+					<div class="row">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Eliminar</button>
+						<button type="button" class="btn btn-primary">Guardar cambios</button>
+					</div>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->

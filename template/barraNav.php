@@ -70,8 +70,8 @@
           <li class="dropdown-submenu"> <a href="#">Gesti&#243;n de Veh&iacute;culo</a>
             <ul class="dropdown-menu">
               <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_ingresar.php')">Agregar veh&iacute;culo</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_eliminar.php')">Eliminar veh&iacute;culo</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_modificar.php')">Modificar veh&iacute;culo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_vehiculo/vehi_lista.php')">Lista de veh&iacute;culo</a></li>
+              
             </ul>
           </li>
 
@@ -90,8 +90,7 @@
             <ul class="dropdown-menu">
             
             <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_ingresar.php')">Ingresar p&#243;liza</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_modificar.php')">Modificar p&#243;liza</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_eliminar.php')">Eliminar p&#243;liza</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/poliza_lista.php')">Lista p&#243;liza</a></li>
            </ul>
           </li>
 
@@ -99,8 +98,7 @@
           <li class="dropdown-submenu"> <a href="#">Gestionar Bitacora</a>
             <ul class="dropdown-menu">
             <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_ingresar.php')">Ingresar registro</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_modificar.php')">Modificar registro</a></li>
-            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_ver.php')">Ver bitacora</a></li>
+            <li><a href="#" onclick="cargar('#panel1','m_vehiculo/bitacora_lista.php')">Ver bitacora</a></li>
             </ul>
           </li>
 
@@ -208,6 +206,19 @@
         <ul class="dropdown-menu">
           <li><a href="#" onclick="cargar('#panel1','m_reportes/generar.php')">Generar reporte</a></li>
           <li><a href="#" onclick="cargar('#panel1','m_reportes/busqueda.php')">Busqueda Personalizada</a></li>
+        </ul>
+      </li><!--Fin de Modulo-->
+
+       <!--Inicio de Modulo Reportes-->
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <span class="glyphicon glyphicon-folder-open"></span>
+          Ayuda <b class="caret"></b></a>
+
+        <ul class="dropdown-menu">
+          <li><a href="#" onclick="">Información técnica</a></li>
+          <li><a href="#" onclick="">Ayuda para Administrador</a></li>
+          <li><a href="#" onclick="">Acerca Control de flota de vehículos 1.0</a></li>
         </ul>
       </li><!--Fin de Modulo-->
 
