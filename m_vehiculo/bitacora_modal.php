@@ -73,7 +73,7 @@
 					</div><!--Fin de hora de entrada  -->
 
 					<div class="row"><!-- Estado actual del vehículo -->
-						<div class="col-md-5"><label for="vehiPoliza"  class="controllabel hidden-xs">
+						<div class="col-md-5"><label for="vehiPoliza"  class="controllabel hidden-xs">Estado del 
 							Veh&#237;culo</label>
 						</div>
 						<div class="col-md-4">

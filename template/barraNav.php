@@ -132,9 +132,7 @@
           <li class="dropdown-submenu"> <a href="#">Gestionar Conductor</a>
             <ul class="dropdown-menu">
               <li><a href="#" onclick="cargar('#panel1','m_conductor/conductor_ingresar.php')">Ingresar Conductor</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_conductor/conductor_eliminar.php')">Eliminar Conductor</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_conductor/conductor_modificar.php')">Modificar Conductor</a></li>
-              <li><a href="#" onclick="cargar('#panel1','m_conductor/conductor_consultar.php')">Consultar Conductor</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_conductor/conductor_lista.php')">Lista de Conductor</a></li>
             </ul>
           </li>
 

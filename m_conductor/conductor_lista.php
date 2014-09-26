@@ -1,6 +1,6 @@
 ﻿
 	<div class="panel panel-default panel-primary" >
-		<div class="panel-heading "><h4>Datos de póliza de los Vehículos</h4>
+		<div class="panel-heading "><h4>Conductores registrados</h4>
 		</div>
 		<div class="panel-body" align="center">
 			<!-- Inicio del formulario -->
@@ -21,23 +21,20 @@
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
 						<tr>
-							<th>Número de esquela</th>
-							<th>Conductor</th>
-							<th>Monto</th>
+							<th>Nombre</th>
+							<th>Departamento</th>
 							<th>Otro</th>
 						</tr>
 						<tr>
-							<td>EE000-0001</td>
-							<td>Conductor 1</td>
-							<td>$400.00</td>
+							<td>Conductor A</td>
+							<td>Gerencia de Servicio</td>
 							<td>
 								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
 							</td>
 						</tr>
 						<tr>
-							<td>EE000-0002</td>
-							<td>Conductor 2</td>
-							<td>$200.00</td>
+							<td>Conductor B</td>
+							<td>Activo Fijo</td>
 							<td>
 								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
 							</td>
@@ -62,5 +59,5 @@
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("esquela_modal.php"); ?>
+		<?php include("conductor_modal.php"); ?>
 	</div><!-- /.modal -->

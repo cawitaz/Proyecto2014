@@ -1,9 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+﻿
 	<div class="panel panel-primary" >
 			<div class="panel-heading "><h4>Ingresar Esquela</h4></div>
 			<div class="panel-body" align="center">
@@ -58,8 +53,8 @@
 				</div><!--Fecha de recibido -->
 
 				<div class="row">
-				  <div class="col-md-5"><label for="fechaRecib" class="controllabel hidden-xs">Fecha de recibida</label> </div>
-				  <div class="col-md-3"><input type="text" class="form-control" readonly="readonly" size="25" id="fechaRecib"
+				  <div class="col-md-5"><label for="fechaVence" class="controllabel hidden-xs">Fecha de vencimiento</label> </div>
+				  <div class="col-md-3"><input type="text" class="form-control" readonly="readonly" size="25" id="fechaVence"
 								placeholder="fecha_vence"></div>
 				</div><!--Fecha de vencimiento -->
 
@@ -80,6 +75,3 @@
 				</form>
 			</div>
 		</div>	
-
-</body>
-</html>
