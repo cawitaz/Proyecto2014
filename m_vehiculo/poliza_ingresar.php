@@ -17,7 +17,7 @@
 						<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 						</div>
 						<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
-							size="25" readonly="readonly" value="Fecha"></div>
+							size="25" value="dd/mm/aaaa" placeholder="Ingrese fecha"></div>
 					</div>
 
 					<div class="row"><!-- Solicitante -->
@@ -31,12 +31,12 @@
 						    </select>
 						</div>
 					</div>
-					<!-- Inicio de los objetos del formulario mediante filas -->
+					<!-- Descripción de la póliza -->
 					<div class="row">
 						<div class="col-md-5"><label for="descrip" class="controllabel hidden-xs">Descripci&#243;n</label>
 						</div>
 						<div class="col-md-3">
-							<textarea id="descrip" cols="30" rows="5"></textarea>
+							<textarea id="descrip" cols="30" rows="5" placeholder="Descripcion"></textarea>
 						</div>
 					</div>
 

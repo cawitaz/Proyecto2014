@@ -1,9 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+﻿
 	<div class="panel panel-primary" >
 		<div class="panel-heading "><h4>Datos de Usuario</h4>
 		</div>
@@ -66,6 +61,3 @@
 	<div id="miModal" class="modal fade">
 		<?php include("modalusuarioconsul.php"); ?>
 	</div><!-- /.modal -->
-	
-</body>
-</html>

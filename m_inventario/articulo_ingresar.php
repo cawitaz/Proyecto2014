@@ -1,62 +1,52 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<div class="panel panel-primary">
-			<div class="panel-heading "><h4>Ingresar nuevo art&#237culo</h4></div>
+﻿	<div class="panel panel-primary">
+			<div class="panel-heading "><h4>Ingresar nuevo art&#237;culo</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
 				<form class="form-horizontal form-inline" role="form">
 
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="row">
-				  <div class="col-md-5"><label for="idconductor"  class="controllabel hidden-xs">Id  art&#237culo</label>
+				  <div class="col-md-5"><label for="idconductor"  class="controllabel hidden-xs">Id  art&#237;culo</label>
 				  </div>
 				  <div class="col-md-3"><input id="idconductor" type="text" readonly="readonly" class="form-control form-text" 
-				  	size="25" placeholder="Id_conductor"></div>
+				  	size="25" value="Id_conductor"></div>
 				</div>
 
-
-				<div class="row">
-					<div class="col-md-5"><label for="tipo" class="controllabel hidden-xs">Tipo de art&#237culo</label>
+				<div class="row"><!-- Id Solicitud Compra -->
+					<div class="col-md-5">
+						<label for="idSolicitud"  class="controllabel hidden-xs">Solicitud de compra</label>
 					</div>
-					<div class="col-md-3"><input id="tipo" type="text" class="form-control form-text" 
-				  	 size="25" placeholder="Ingrese Tipo de art&#237culo"></div>
-				</div> <!--Fin del nombre conductor -->
-
-
-				<div class="row">
-					<div class="col-md-5"><label for="Marca" class="controllabel hidden-xs">Ingrese Marca del art&#237culo</label>
+					<div class="col-md-3">
+						<select id="idSolicitud" class="form-control">
+							<option value="">Solicitud de compra 1</option>
+						    <option value="">Solicitud de compra 2</option>
+						</select>
 					</div>
-					<div class="col-md-3"><input id="Marca" type="text" class="form-control form-text" 
-				  	 size="25" placeholder="Ingrese marca del art&#237culo"></div>
-				</div> <!--Fin del telefono -->
-
-				<div class="row">
-					<div class="col-md-5"><label for="cantidad" class="controllabel hidden-xs">Cantidad del art&#237culo</label>
-					</div>
-					<div class="col-md-3"><input id="numLic" type="text" class="form-control form-text" 
-				  	 size="25" placeholder="Ingrese cantidad del art&#237culo"></div>
-				</div> <!--Fin del numero de licencia -->
-
+				</div> 
 				
-				<div class="row">
-					<div class="col-md-5"><label for="fecha" class="controllabel hidden-xs">Cantidad del art&#237culo</label>
+				<div class="row"><!-- Nombre de artículos -->
+					<div class="col-md-5">
+						<label for="nomArticulo"  class="controllabel hidden-xs">Art&#237;culo</label>
 					</div>
-					<div class="col-md-3"><input id="fecha" type="text" readonly="readonly" class="form-control form-text" 
-				  	 size="25" placeholder="fecha_ingreso"></div>
-				</div> <!--Fin del numero de licencia -->
-
-				
-								<div class="row">
-					<div class="col-md-5"><label for="costo" class="controllabel hidden-xs">Costo de la compra</label>
+					<div class="col-md-3">
+						<select id="nomArticulo" class="form-control">
+							<option value="">Nombre de artículo 1</option>
+						    <option value="">Nombre de artículo 2</option>
+						</select>
 					</div>
-					<div class="col-md-3"><input id="costo" type="text" class="form-control form-text" 
-				  	 size="25" placeholder="Ingrese el costo de la compra"></div>
-				</div> <!--Fin del numero de licencia -->
+				</div> 
 
+				<!-- Precio del artículo. Este valor no se debe capturar ya que este es unico 
+				y se encuentra en su orden de compra correspondiente -->
+
+				<!--Cantidad del artículo. Este valor se encuentra en la orden de compra -->
+
+				<div class="row"><!--Fecha -->
+					<div class="col-md-5"><label for="fechaCompra" class="controllabel hidden-xs">Fecha de Compra</label>
+					</div>
+					<div class="col-md-3"><input id="fechaCompra" type="text" class="form-control form-text" 
+				  	 size="25" value="dd/mm/aaaa" placeholder="Ingrese fecha de compra"></div>
+				</div> 
 				
 				<!-- Botones -->
 				<div class="row center-text">
@@ -72,6 +62,3 @@
 				</form>
 			</div>
 		</div>
-
-</body>
-</html>

@@ -30,14 +30,14 @@
 						<div class="col-md-5"><label for="fechaRecibida"  class="controllabel hidden-xs">Fecha recibida</label>
 						</div>
 						<div class="col-md-4"><input id="fechaRecibida" type="text" class="form-control form-text" 
-							size="25"  value="dd/mm/aaaa"></div>
+							size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha de recibido"></div>
 					</div><!-- Fecha recibida-->
 
 					<div class="row">
 						<div class="col-md-5"><label for="fechaVence"  class="controllabel hidden-xs">Fecha de vencimiento</label>
 						</div>
 						<div class="col-md-4"><input id="fechaVence" type="text" class="form-control form-text" 
-							size="25"  value="dd/mm/aaaa"></div>
+							size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha de vencimiento"></div>
 					</div><!--Fecha de vencimiento -->
 
 

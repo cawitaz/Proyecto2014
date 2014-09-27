@@ -27,7 +27,7 @@
 					<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 					</div>
 					<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
-						size="25" readonly="readonly" value="Fecha">
+						size="25" value="dd/mm/aaaa" placeholder="Ingrese Fecha" >
 					</div>
 				</div>
 

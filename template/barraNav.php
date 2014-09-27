@@ -214,7 +214,7 @@
           Ayuda <b class="caret"></b></a>
 
         <ul class="dropdown-menu">
-          <li><a href="#" onclick="">Información técnica</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_reportes/ayuda_tecnica.php')">Información técnica</a></li>
           <li><a href="#" onclick="">Ayuda para Administrador</a></li>
           <li><a href="#" onclick="">Acerca Control de flota de vehículos 1.0</a></li>
         </ul>

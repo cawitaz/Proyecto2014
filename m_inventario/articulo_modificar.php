@@ -1,4 +1,4 @@
-﻿
+
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Modificar artículos</h4>
 		</div>
@@ -21,25 +21,29 @@
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
 						<tr>
-							<th>Nombre</th>
-							<th>Departamento</th>
+							<th>ID artículo</th>
+							<th>Nombre artículo</th>
+							<th>Fecha de compra</th>
 							<th>Otro</th>
 						</tr>
-						<tr>
-							<td>Conductor A</td>
-							<td>Gerencia de Servicio</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						<tr>
-							<td>Conductor B</td>
-							<td>Activo Fijo</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						
+						<div class="contenido">
+							<tr>
+								<td>ART-000001</td>
+								<td>Articulo 1</td>
+								<td>01/01/2001</td>
+								<td>
+									<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
+								</td>
+							</tr>
+							<tr>
+								<td>ART-000002</td>
+								<td>Articulo 2</td>
+								<td>01/01/2002</td>
+								<td>
+									<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
+								</td>
+							</tr>
+						</div>
 					</table>
 				</div>
 

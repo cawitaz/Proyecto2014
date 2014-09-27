@@ -61,13 +61,13 @@
 					<div class="row">
 					  <div class="col-md-5"><label for="emiTarjeVehi" class="controllabel hidden-xs">Fecha de Emisi&#243n de tarjeta</label> </div>
 					  <div class="col-md-3"><input type="text" class="form-control" size="25" id="emiTarjeVehi"
-									placeholder="Fecha de Emision de la tarjeta"></div>
+									value="dd/mm/aaaa" placeholder="Fecha de Emision de la tarjeta"></div>
 					</div><!--Fin del  -->
 
 					<div class="row">
 					  <div class="col-md-5"><label for="emiPlacaVehi" class="controllabel hidden-xs">Fecha de Emisi&#243n de placas</label> </div>
 					  <div class="col-md-3"><input type="text" class="form-control" size="25" id="emiPlacaVehi"
-									placeholder="Fecha de Emisi&#243n de placas"></div>
+									value="dd/mm/aaaa" placeholder="Fecha de Emisi&#243n de placas"></div>
 					</div><!--Fin del  -->
 
 					<div class="row">

@@ -48,14 +48,14 @@
 
 				<div class="row">
 				  <div class="col-md-5"><label for="fechaRecib" class="controllabel hidden-xs">Fecha de recibida</label> </div>
-				  <div class="col-md-3"><input type="text" class="form-control" readonly="readonly" size="25" id="fechaRecib"
-								placeholder="fecha_recibido"></div>
+				  <div class="col-md-3"><input type="text" class="form-control" size="25" id="fechaRecib"
+								value="dd/mm/aaaa" placeholder="Ingrese fecha de recibido"></div>
 				</div><!--Fecha de recibido -->
 
 				<div class="row">
 				  <div class="col-md-5"><label for="fechaVence" class="controllabel hidden-xs">Fecha de vencimiento</label> </div>
-				  <div class="col-md-3"><input type="text" class="form-control" readonly="readonly" size="25" id="fechaVence"
-								placeholder="fecha_vence"></div>
+				  <div class="col-md-3"><input type="text" class="form-control" size="25" id="fechaVence"
+								value="dd/mm/aaaa" placeholder="Ingrese fecha de vencimiento"></div>
 				</div><!--Fecha de vencimiento -->
 
 
