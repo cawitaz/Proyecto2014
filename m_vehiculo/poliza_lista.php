@@ -1,10 +1,4 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	
-</head>
-<body>
-	<div class="panel panel-default panel-primary" >
+﻿	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Datos de póliza de los Vehículos</h4>
 		</div>
 		<div class="panel-body" align="center">
@@ -55,9 +49,9 @@
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
-						onclick="limpiar('#panel1');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
 					</div>
 					<br>
 				</div>
@@ -69,6 +63,3 @@
 	<div id="miModal" class="modal fade">
 		<?php include("poliza_modal.php"); ?>
 	</div><!-- /.modal -->
-	
-</body>
-</html>

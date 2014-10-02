@@ -6,17 +6,17 @@
 
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="row">
-				  <div class="col-md-5"><label for="idconductor"  class="controllabel hidden-xs">Id  art&#237;culo</label>
+				  <div class="col-md-5 col-sm-5"><label for="idarticulo"  class="controllabel hidden-xs">Id  art&#237;culo</label>
 				  </div>
-				  <div class="col-md-3"><input id="idconductor" type="text" readonly="readonly" class="form-control form-text" 
-				  	size="25" value="Id_conductor"></div>
+				  <div class="col-md-4 col-sm-4"><input id="idarticulo" type="text" readonly="readonly" class="form-control form-text" 
+				  	size="25" value="ID Artículo"></div>
 				</div>
 
 				<div class="row"><!-- Id Solicitud Compra -->
-					<div class="col-md-5">
+					<div class="col-md-5 col-sm-5">
 						<label for="idSolicitud"  class="controllabel hidden-xs">Solicitud de compra</label>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4 col-sm-4">
 						<select id="idSolicitud" class="form-control">
 							<option value="">Solicitud de compra 1</option>
 						    <option value="">Solicitud de compra 2</option>
@@ -25,10 +25,10 @@
 				</div> 
 				
 				<div class="row"><!-- Nombre de artículos -->
-					<div class="col-md-5">
+					<div class="col-md-5 col-sm-5">
 						<label for="nomArticulo"  class="controllabel hidden-xs">Art&#237;culo</label>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4 col-sm-4">
 						<select id="nomArticulo" class="form-control">
 							<option value="">Nombre de artículo 1</option>
 						    <option value="">Nombre de artículo 2</option>
@@ -42,9 +42,9 @@
 				<!--Cantidad del artículo. Este valor se encuentra en la orden de compra -->
 
 				<div class="row"><!--Fecha -->
-					<div class="col-md-5"><label for="fechaCompra" class="controllabel hidden-xs">Fecha de Compra</label>
+					<div class="col-md-5 col-sm-5"><label for="fechaCompra" class="controllabel hidden-xs">Fecha de Compra</label>
 					</div>
-					<div class="col-md-3"><input id="fechaCompra" type="text" class="form-control form-text" 
+					<div class="col-md-4 col-sm-4"><input id="fechaCompra" type="text" class="form-control form-text" 
 				  	 size="25" value="dd/mm/aaaa" placeholder="Ingrese fecha de compra"></div>
 				</div> 
 				
@@ -52,9 +52,9 @@
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
-						onclick="limpiar('#panel1');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
 					</div>
 					<br>
 				</div>

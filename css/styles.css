@@ -5,6 +5,10 @@ body{
   background: #679DFA;
 }
 
+.texto{
+  color: black;
+}
+
 .barraLateral{
   text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
   background: #222;
@@ -43,9 +47,11 @@ body{
 
 
 /*SUB MENU DEL LA BARRA DE NAVEGACION PARA n NIVELES*/
+
 .dropdown-submenu{
     position:relative;
 }
+
  
 .dropdown-submenu > .dropdown-menu
 {

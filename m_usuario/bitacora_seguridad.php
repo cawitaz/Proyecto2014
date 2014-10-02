@@ -1,6 +1,6 @@
 ﻿
 	<div class="panel panel-default panel-primary" >
-		<div class="panel-heading "><h4>Datos de póliza de los Vehículos</h4>
+		<div class="panel-heading "><h4>Bitácora de Vehículos</h4>
 		</div>
 		<div class="panel-body" align="center">
 			<!-- Inicio del formulario -->
@@ -21,26 +21,19 @@
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
 						<tr>
-							<th>Número de esquela</th>
-							<th>Conductor</th>
-							<th>Monto</th>
-							<th>Otro</th>
+							<th>Fecha</th>
+							<th>Usuario</th>
+							<th>Operación</th>
 						</tr>
 						<tr>
-							<td>EE000-0001</td>
-							<td>Conductor 1</td>
-							<td>$400.00</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
+							<td>12/12/2013</td>
+							<td>USER-0001</td>
+							<td>INSERT INTO TABLA (COL1) VALUES(INFO1)</td>
 						</tr>
 						<tr>
-							<td>EE000-0002</td>
-							<td>Conductor 2</td>
-							<td>$200.00</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
+							<td>03/02/2014</td>
+							<td>USER-0002</td>
+							<td>INSERT INTO TABLA (COL1) VALUES(INFO1)</td>
 						</tr>
 						
 					</table>
@@ -50,17 +43,10 @@
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+					<div class="col-xs-4 col-sm-4 col-md-4 col-xs-offset-3 col-sm-offset-4 col-md-offset-4 "> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
 						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
-					</div>
 					<br>
 				</div>
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
-
-	<!-- Bloque modal -->
-	<div id="miModal" class="modal fade">
-		<?php include("esquela_modal.php"); ?>
-	</div><!-- /.modal -->

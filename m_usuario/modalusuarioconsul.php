@@ -8,7 +8,7 @@
 			<div class="row">
 				<div class="row col-sm-4 col-md-4 row col-sm-offset-3 col-md-offset-3">
 					<label for="nomUsuario" class="controllabel hidden-xs">Nombre del usuario</label>
-					<input type="text" class="form-control" size="25" id="nomUsuario"
+					<input type="text" class="form-control" size="25" id="nomUsuario" class="btn btn-default" 
 									placeholder="Ingrese nombre de usuario">
 				</div>
 			</div>

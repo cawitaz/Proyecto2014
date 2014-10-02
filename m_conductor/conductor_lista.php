@@ -10,7 +10,7 @@
 					<input type="text" id="idBuscar" placeholder="Busqueda">
 					<div class="btn-group">
 						<span class="glyphicon glyphicon-search"></span>
-							</span> <input type="button" value="Buscar"> 
+							</span> <input type="button" class="btn btn-default" value="Buscar"> 
 						
 					</div>
 					
@@ -47,9 +47,9 @@
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
-						onclick="limpiar('#panel1');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
 					</div>
 					<br>
 				</div>

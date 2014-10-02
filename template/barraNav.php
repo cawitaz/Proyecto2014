@@ -7,7 +7,7 @@
   <div class="nav navbar-static-top">
         <div class="row ">
           <div class="col-xs-7 col-sm-9 col-md-10" id="Titulo">
-            <div class="text-left" ><h4><strong>Control de Flota de Veh&#237;culos<span class="hidden-xs"> - Alcaldía Municipal de Mejicanos</span></strong></h4></div>
+            <div class="text-left" ><h4><strong>Control de Flota de Veh&#237;cular<span class="hidden-xs"> - Alcaldía Municipal de Mejicanos</span></strong></h4></div>
           </div>
           <div class="col-xs-4 col-sm-2  col-md-2 ">
             <div class="btn-group">
@@ -39,7 +39,7 @@
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex6-collapse navbar-inverse">
+  <div id="menu" class="collapse navbar-collapse navbar-ex6-collapse navbar-inverse">
     <ul class="nav navbar-nav">
       <!--  Iniciamos con el menu-->
       <li class="active"><a href="menu.php"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
@@ -53,6 +53,11 @@
         <ul class="dropdown-menu" >
           <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_crear.php');">Agregar usuario</a></li>
           <li><a href="#" onclick="cargar('#panel1', 'm_usuario/usuario_consultar.php');">Lista de Usuarios</a></li>
+          
+            <li class="divider"></li>
+            <li><a href="#" onclick="cargar('#panel1', 'm_usuario/bitacora_seguridad.php');">Ver Bitácora de Seguridad</a></li>
+          
+
         </ul>
       </li> <!--Fin de Modulo-->
 
@@ -154,15 +159,24 @@
 
         <ul class="dropdown-menu">
           <li><a href="#" onclick="cargar('#panel1','m_inventario/taller_ver.php')">Ver inventario taller</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/taller_actualizar.php')">Actualizar inventario</a></li>
-
-          <li class="divider"></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_estado.php')">Ver estado de compra</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_peticion.php')">Elaborar petici&#243;n de compra</a></li>
           
           <li class="divider"></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_ingresar.php')">Ingresar Art&iacute;culo</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_modificar.php')">Modificar Art&iacute;culo</a></li>
+          <!-- Gestionar compras -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Compras</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_estado.php')">Ver estado de compra</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_peticion.php')">Elaborar petici&#243;n de compra</a></li>
+            </ul>
+          </li>
+
+          
+          <!-- Submenu Gestionar articulos -->
+          <li class="dropdown-submenu"> <a href="#">Gestionar Art&iacute;culo</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_ingresar.php')">Ingresar Art&iacute;culo</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/articulo_modificar.php')">Modificar Art&iacute;culo</a></li>
+            </ul>
+          </li>
           
         </ul>
       </li><!--Fin de Modulo-->
@@ -185,11 +199,13 @@
             </ul>
           </li><!--Fin de Modulo-->
 
-
-          <li class="divider"></li>
-          <li><a href="#" onclick="cargar('#panel1','m_manto/manto_solicitud.php')">Desplegar solicitud de reparaci&#243;n</a></li>
-          <li><a href="#" onclick="cargar('#panel1','m_manto/manto_autoriza.php')">Autorizar y Rechazar</a></li>
-          
+          <!-- Submenu Peticiones de reparación -->
+          <li class="dropdown-submenu"> <a href="#">Peticiones de Reparación</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" onclick="cargar('#panel1','m_manto/manto_solicitud.php')">Desplegar solicitud de reparaci&#243;n</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_manto/manto_autoriza.php')">Autorizar y Rechazar</a></li>
+            </ul>
+          </li>
         </ul>
       </li><!--Fin de Modulo manto-->
 
@@ -202,6 +218,8 @@
           Reportes <b class="caret"></b></a>
 
         <ul class="dropdown-menu">
+          <li><a href="#" onclick="cargar('#panel1','./template/gestor_notificaciones.php')">Notificaciones</a></li>
+          <li class="divider"></li>
           <li><a href="#" onclick="cargar('#panel1','m_reportes/generar.php')">Generar reporte</a></li>
           <li><a href="#" onclick="cargar('#panel1','m_reportes/busqueda.php')">Busqueda Personalizada</a></li>
         </ul>
@@ -215,8 +233,8 @@
 
         <ul class="dropdown-menu">
           <li><a href="#" onclick="cargar('#panel1','m_reportes/ayuda_tecnica.php')">Información técnica</a></li>
-          <li><a href="#" onclick="">Ayuda para Administrador</a></li>
-          <li><a href="#" onclick="">Acerca Control de flota de vehículos 1.0</a></li>
+          <li><a href="#" onclick="cargar('#panel1','m_reportes/ayuda_admin.php')">Ayuda para Administrador</a></li>
+          <li><a href="#" onclick="cargar('#panel1','template/acerca.php')">Acerca de...</a></li>
         </ul>
       </li><!--Fin de Modulo-->
 

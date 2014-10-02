@@ -22,26 +22,21 @@
 					<table id="tabla" class="table table-hover">						
 						<tr>
 							<th>Fecha</th>
+							<th>Petición</th>
 							<th>Departamento que solicita</th>
 							<th>Estado</th>
-							<th>Otro</th>
 						</tr>
 						<tr>
+							<td>12/12/2013</td>
 							<td>N001-001</td>
 							<td>Gerencia de Servicio</td>
 							<td>Completada</td>
-							<td>
-								<input type="button" class="btn btn-default btn-xs" value="Cambiar estado">
-							</td>
 						</tr>
 						<tr>
+							<td>15/10/2014</td>
 							<td>N001-002</td>
 							<td>Activo Fijo</td>
 							<td>Pendiente</td>
-							<td>
-								<input type="button" class="btn btn-default btn-xs" value="Cambiar estado">
-								
-							</td>
 						</tr>
 						
 					</table>
@@ -51,9 +46,9 @@
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" value="Cancelar" 
-						onclick="limpiar('#panel1');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" value="Guardar">
+					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
+					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
 					</div>
 					<br>
 				</div>

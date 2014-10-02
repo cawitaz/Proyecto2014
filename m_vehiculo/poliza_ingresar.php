@@ -9,14 +9,14 @@
 					<div class="row">
 						<div class="col-md-5"><label for="idPoliza" class="controllabel hidden-xs">P&#243;liza</label>
 						</div>
-						<div class="col-md-3"><input id="idPoliza" type="text" class="form-control form-text" 
+						<div class="col-md-4"><input id="idPoliza" type="text" class="form-control form-text" 
 							size="25" placeholder="Ingrese p&#243;liza"></div>
 					</div>
 
 					<div class="row"><!-- Fecha sustraida del sistema -->
 						<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 						</div>
-						<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
+						<div class="col-md-4"><input id="fecha" type="text" class="form-control form-text" 
 							size="25" value="dd/mm/aaaa" placeholder="Ingrese fecha"></div>
 					</div>
 
@@ -24,7 +24,7 @@
 						<div class="col-md-5"><label for="vehiPoliza"  class="controllabel hidden-xs">
 							Veh&#237;culo</label>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-4">
 							<select id="vehiPoliza" class="form-control">
 						  		<option value="">veh&#237;culo 1</option>
 						        <option value="">veh&#237;culo 2</option>
@@ -35,8 +35,8 @@
 					<div class="row">
 						<div class="col-md-5"><label for="descrip" class="controllabel hidden-xs">Descripci&#243;n</label>
 						</div>
-						<div class="col-md-3">
-							<textarea id="descrip" cols="30" rows="5" placeholder="Descripcion"></textarea>
+						<div class="col-md-4">
+							<textarea id="descrip" rows="5" placeholder="Descripcion"></textarea>
 						</div>
 					</div>
 
@@ -46,10 +46,10 @@
 						<br>
 						
 						<div class="col-xs-7 col-sm-7 col-md-7"> 
-							<input type="button" id="cancelar" value="Cancelar" onclick="limpiar('#panel1');" >
+							<input type="button" id="cancelar" class="btn btn-default" value="Cancelar" onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" >
 						</div>
 						<div class="col-xs-1 col-md-1"> 
-							<input type="button" value="Guardar">
+							<input type="button" class="btn btn-default btn-primary" value="Guardar">
 						</div>
 						<br>
 					</div>

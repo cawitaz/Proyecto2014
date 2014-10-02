@@ -6,8 +6,8 @@
 		<!-- Inicio del formulario -->
 		<form class="form-horizontal form-inline" role="form">
 			<div class="row">
-				<a href="archivos/manual_tecnico.pdf" target="_blank">
-					<strong class="texto">Ver manual de ayuda técnica</strong>
+				<a href="archivos/manual_admin.pdf" target="_blank">
+					<strong class="texto">Ver manual del administrador</strong>
 				</a>
 			</div>
 			<br>

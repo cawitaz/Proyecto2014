@@ -7,24 +7,24 @@
 				<div class="modal-body">
 					<!-- Inicio de los objetos del formulario mediante filas -->
 					<div class="row">
-						<div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</label>
+						<div class="col-md-5 col-sm-5"><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</label>
 						</div>
-						<div class="col-md-4"><input id="idBitacora" type="text" class="form-control form-text" 
+						<div class="col-md-4 col-sm-4"><input id="idBitacora" type="text" class="form-control form-text" 
 							size="25" readonly="readonly" value="IdBitacora"></div>
 					</div>
 
 					<div class="row"><!-- Fecha sustraida del sistema -->
-						<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
+						<div class="col-md-5 col-sm-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 						</div>
-						<div class="col-md-4"><input id="fecha" type="text" class="form-control form-text" 
+						<div class="col-md-4 col-sm-4"><input id="fecha" type="text" class="form-control form-text" 
 							size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha"></div>
 					</div>
 
 					<div class="row"><!-- Conductor -->
-						<div class="col-md-5"><label for="conductor"  class="controllabel hidden-xs">
+						<div class="col-md-5 col-sm-5"><label for="conductor"  class="controllabel hidden-xs">
 							Conductor</label>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4">
 							<select id="conductor" class="form-control">
 						  		<option value="">conductor 1</option>
 						        <option value="">conductor 2</option>
@@ -33,9 +33,9 @@
 					</div>
 
 					<div class="row">
-						<div class="col-md-5"><label for="destino" class="controllabel hidden-xs">Destino</label>
+						<div class="col-md-5 col-sm-5"><label for="destino" class="controllabel hidden-xs">Destino</label>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4">
 							<input id="destino" type="text" class="form-control form-text" 
 							size="25" placeholder="Ingrese el destino"></div>
 					</div><!-- Fin de ingrese destino -->
@@ -73,10 +73,10 @@
 					</div><!--Fin de hora de entrada  -->
 
 					<div class="row"><!-- Estado actual del vehículo -->
-						<div class="col-md-5"><label for="vehiPoliza"  class="controllabel hidden-xs">Estado del 
+						<div class="col-md-5 col-sm-5"><label for="vehiPoliza"  class="controllabel hidden-xs">Estado del 
 							Veh&#237;culo</label>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 col-sm-4">
 							<select id="vehiPoliza" class="form-control">
 						  		<option value="1">Disponible</option>
 						        <option value="2">Ocupado</option>
