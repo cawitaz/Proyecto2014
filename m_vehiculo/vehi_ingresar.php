@@ -10,8 +10,8 @@
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="idVehi"  class="controllabel hidden-xs">Placa</label>
 					  </div>
-					  <div class="col-md-3 col-sm-3"><input id="idVehi" type="text" class="form-control form-text" 
-					  	size="25" placeholder="Ingrese la placa"></div>
+					  <div class="col-md-3 col-sm-3"><input title="codigo del Vehiculo" id="idVehi" type="text" class="form-control form-text" 
+					  	size="25" placeholder="Ingrese la placa" required/> </div>
 					</div>
 
 					<div class="row">
