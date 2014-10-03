@@ -19,26 +19,37 @@
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
-						<tr>
-							<th>Vehículo</th>
-							<th>Kilometraje actual(Km)</th>
-							<th>Otro</th>
-						</tr>
-						<tr>
-							<td>Id 0001</td>
-							<td>500</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						<tr>
-							<td>Id 0003</td>
-							<td>230</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						
+				     <tr>
+							<center><th>ID</th></center>
+							<center><th>Destino</th></center>
+							<center><th>Vehiculo</th></center>
+						</tr>				
+												
+	<?php
+include("conexion.php");
+
+$sql = "SELECT * FROM FVAM_bitacoras_2014";
+$stmt = sqlsrv_query( $conn, $sql );
+if( $stmt === false) {
+    die( print_r( sqlsrv_errors(), true) );
+}
+
+while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+      $uno=	$row['AM_idBitacora'];
+      $dos=	$row['AM_destino'];
+      $tres=$row['AM_idVehiculo'];
+     
+      echo"<tr>";
+      echo "<td>$uno</td><td>$dos</td><td>$tres</td>";
+      echo '<td><center><a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones </a></center></td>';
+      echo "</tr>";
+     
+
+}
+
+sqlsrv_free_stmt( $stmt);
+
+?>
 					</table>
 				</div>
 
