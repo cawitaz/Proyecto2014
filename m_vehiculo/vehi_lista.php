@@ -1,4 +1,6 @@
-﻿
+﻿<?php
+	include("conexion.php");
+	?>
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Datos de Vehículos</h4>
 		</div>
@@ -19,26 +21,46 @@
 				<br>
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="table-responsive">
-					<table id="tabla" class="table table-hover">						
-						<tr>
-							<th>Placas</th>
-							<th>Tipo de Vehiculo</th>
-							<th>Otro</th>
-						</tr>
-						<tr>
-							<td>N000-0001</td>
-							<td>Pick up</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						<tr>
-							<td class="celda2">N000-0002</td>
-							<td>Camioneta</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
+					<table id="tabla" name="tabla" class="table table-hover">		
+					<tr>
+							<center><th>Vehículo</th></center>
+							<center><th>Placa</th></center>
+							<center><th>Tipo</th></center>
+						</tr>				
+												
+	<?php
+$server = "MARIELOS-PC\SQLEXPRESS";
+$connectionInfo = array( "Database"=>"BD_FlotaVehicular", "UID"=>"sa", "PWD"=>"carlos" );
+$conn = sqlsrv_connect( $server, $connectionInfo );
+
+
+if( $conn === false ) {
+    die( print_r( sqlsrv_errors(), true));
+}
+
+$sql = "SELECT * FROM FVAM_vehiculo_2014";
+$stmt = sqlsrv_query( $conn, $sql );
+if( $stmt === false) {
+    die( print_r( sqlsrv_errors(), true) );
+}
+
+while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+      $uno=	$row['AM_idVehiculo'];
+      $dos=	$row['AM_numPlacas'];
+      $tres=$row['AM_tipoVehiculo'];
+     
+      echo"<tr>";
+      echo "<td>$uno</td><td>$dos</td><td>$tres</td>";
+      echo '<td><center><a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones </a></center></td>';
+      echo "</tr>";
+     
+
+}
+
+sqlsrv_free_stmt( $stmt);
+
+?>
+						
 						
 					</table>
 				</div>
