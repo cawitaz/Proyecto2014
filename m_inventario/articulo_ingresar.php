@@ -34,7 +34,7 @@
 						    <option value="">Nombre de artículo 2</option>
 						</select>
 					</div>
-				</div> 
+				</div>
 
 				<!-- Precio del artículo. Este valor no se debe capturar ya que este es unico 
 				y se encuentra en su orden de compra correspondiente -->

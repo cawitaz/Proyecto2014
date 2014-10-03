@@ -14,7 +14,7 @@
 				<div class="row">
 					<div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bit&#225cora de veh&#237culo </label>
 				    </div>
-				    <div class="col-md-3" id="idBitacora" > 
+				    <div class="col-md-4" id="idBitacora" > 
 				    	<select class="form-control">
 				    		<option value="VEH-000001">Vehículo 1</option>
 				        	<option value="VEH-000002">Vehículo 2</option>
@@ -26,7 +26,7 @@
 				<div class="row"><!-- Fecha sustraida del sistema -->
 					<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 					</div>
-					<div class="col-md-3"><input id="fecha" type="text" class="form-control form-text" 
+					<div class="col-md-4"><input id="fecha" type="text" class="form-control form-text" 
 						size="25" value="dd/mm/aaaa" placeholder="Ingrese Fecha" >
 					</div>
 				</div>
@@ -34,7 +34,7 @@
 				<div class="row"><!-- Solicitante -->
 					<div class="col-md-5"><label for="solicita"  class="controllabel hidden-xs">Solicitante</label>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-4">
 						<input id="solicita" type="text" class="form-control form-text" 
 						size="25" readonly="readonly" value="Usuario actual">
 					</div>
@@ -43,14 +43,14 @@
 
 				<div class="row"><!-- Destino -->
 				  <div class="col-md-5"><label for="destino" class="controllabel hidden-xs">Destino del veh&#237culo</label> </div>
-				  <div class="col-md-3"><input type="text" class="form-control" size="25" id="destino"
+				  <div class="col-md-4"><input type="text" class="form-control" size="25" id="destino"
 								placeholder="Ingrese el destino"></div>
 				</div>
 
 				<div class="row"><!--Conductor -->
 				  <div class="col-md-5"><label for="conductor" class="controllabel hidden-xs">Conductor </label>
 				  </div>
-				  <div class="col-md-3" id="conductor" > 
+				  <div class="col-md-4" id="conductor" > 
 				  	<select class="form-control">
 				        <option value="">Conductor 1</option>
 				        <option value="">Conductor 2</option>

@@ -17,7 +17,7 @@
               </div>
 
               <ul class="dropdown-menu" >
-                <li><a href="#"><span class="glyphicon glyphicon-wrench"> Perfil</span></a></li>
+                <li><a href="#" onclick="cargar('#panel1','template/perfil.php')"><span class="glyphicon glyphicon-wrench"> Perfil</span></a></li>
                 <li class="divider"></li>
                 <li><a href="index.php"><span class="glyphicon glyphicon-off"> Salir</span></a></li>
               </ul>
@@ -164,8 +164,9 @@
           <!-- Gestionar compras -->
           <li class="dropdown-submenu"> <a href="#">Gestionar Compras</a>
             <ul class="dropdown-menu">
-              <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_estado.php')">Ver estado de compra</a></li>
               <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_peticion.php')">Elaborar petici&#243;n de compra</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_estado.php')">Ver estado de compra</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_inventario/compra_cambiar_estado.php')">Cambiar estado de compra</a></li>
             </ul>
           </li>
 

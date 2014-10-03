@@ -1,6 +1,6 @@
 ﻿
 	<div class="panel panel-default panel-primary" >
-		<div class="panel-heading "><h4>Autorización de solicitudes de reparación</h4>
+		<div class="panel-heading "><h4>Estado de solicitud de compra</h4>
 		</div>
 		<div class="panel-body" align="center">
 			<!-- Inicio del formulario -->
@@ -10,7 +10,7 @@
 					<input type="text" id="idBuscar" placeholder="Busqueda">
 					<div class="btn-group">
 						<span class="glyphicon glyphicon-search"></span>
-							</span> <input type="button" value="Buscar"> 
+							</span> <input type="button" class="btn btn-default" value="Buscar"> 
 						
 					</div>
 					
@@ -21,15 +21,15 @@
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
 						<tr>
-							<th>Solicitud</th>
-							<th>Departamento</th>
+							<th>Petición</th>
+							<th>Departamento que solicita</th>
 							<th>Estado</th>
-							<th>Otro</th>
+							<th>Cambiar</th>
 						</tr>
 						<tr>
 							<td>N001-001</td>
 							<td>Gerencia de Servicio</td>
-							<td>Autorizado</td>
+							<td>Completada</td>
 							<td>
 								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
 							</td>
@@ -37,7 +37,7 @@
 						<tr>
 							<td>N001-002</td>
 							<td>Activo Fijo</td>
-							<td>Denegado</td>
+							<td>Pendiente</td>
 							<td>
 								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
 							</td>
@@ -63,5 +63,5 @@
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("manto_autoriza_modal.php"); ?>
+		<?php include("compra_cambiar_modal.php"); ?>
 	</div><!-- /.modal -->
