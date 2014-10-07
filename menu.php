@@ -11,12 +11,15 @@ Fecha de modificación: 17/09/2014
 </head>
 <body>
 
+<aside>
+	<div class="row hidden-xs col-sm-3 col-md-3 ">
+		<?php include("template/gestor_notificaciones.php");?>
+	</div>
+</aside>
 	<?php include("template/barraNav.php"); ?>
 
 	<div class="container-fluid">
-		<div class="row hidden-xs col-sm-3 col-md-3 ">
-			<?php include("template/gestor_notificaciones.php");?>
-		</div>
+		
 
         <div class="row">
         	<div class="main">

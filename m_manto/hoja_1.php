@@ -1,9 +1,21 @@
-<div class="row"> <!-- Id Mantenimiento -->
-	<div class="col-md-5 col-sm-5">
-		<label for="hoja" class="controllabel hidden-xs">Hoja 1</label>
+<form>
+	<div class="table-responsive">
+		<table id="tabla" class="table table-hover">
+			<tr>
+				<th>ID Hoja de vida</th>
+				<th>Departamento</th>
+				<th>Vehículo</th>
+			</tr>
+			<tr>
+				<td>HOJA-00001</td>
+				<td>Gerencia de Servicio</td>
+				<td>N001-001</td>
+			</tr>
+			<tr>
+				<td>HOJA-00002</td>
+				<td>Activo Fijo</td>
+				<td>N001-002</td>
+			</tr>
+		</table>
 	</div>
-	<div class="col-md-4 col-sm-4">
-		<input id="hoja" type="text" class="form-control form-text" 
-		size="25" readonly="readonly" placeholder="Campo 1">
-	</div>
-</div>
+</form>

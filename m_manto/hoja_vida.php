@@ -4,7 +4,6 @@
 		</div>
 		<div class="panel-body" align="center">
 			<!-- Inicio de los objetos del formulario mediante filas -->
-			<br>
 			<div class="row">
 				<ul class="nav nav-tabs nav-justified">
 					<li class="active"><a href="#opcion1" data-toggle="tab">Vehículos</a></li>
@@ -19,11 +18,27 @@
 						
 					<div class="tab-pane" id="opcion2">
 						<h3>Registro de Materiales utilizados</h3>
+						<div class="row center-text">
+							<br>
+							<input type="text" id="idBuscar" placeholder="Busqueda">
+							<div class="btn-group">
+								<span class="glyphicon glyphicon-search"></span>
+									</span> <input type="button" value="Buscar"> 
+							</div>
+						</div>
 						<?php include("hoja_2.php"); ?>
 					</div>
 						
 					<div class="tab-pane" id="opcion3">
 						<h3>Registro de Mantenimientos</h3>
+						<div class="row center-text">
+							<br>
+							<input type="text" id="idBuscar" placeholder="Busqueda">
+							<div class="btn-group">
+								<span class="glyphicon glyphicon-search"></span>
+									</span> <input type="button" value="Buscar"> 
+							</div>
+						</div>
 						<?php include("hoja_3.php"); ?>
 					</div>
 				</div>

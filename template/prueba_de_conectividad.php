@@ -1,14 +1,16 @@
 ﻿<?php
 
 /* El servidor con el formato: <computer>\<instance name> o 
- <server>,<port> cuando se use un número de puerto diferente del de defecto*/
-
-require_once '../archivos/config.php'; 
-private $servidor 	= DB_SERVER;
-private $usuario 	= DB_USER;
-private $pass 		= DB_PASS;
-private $db_name 	= DB_NAME;
-protected $conn = null;
+ <server>,<port> cuando se use un número de puerto diferente del de defecto
+require_once 'config.php'; 
+ */
+echo "Probando conexion a MSSQL";
+require_once 'config.php'; 
+ $servidor 	= DB_SERVER;
+$usuario 	= DB_USER;
+$pass 		= DB_PASS;
+$db_name 	= DB_NAME;
+$conn = null;
 
 echo "Probando conexion a MSSQL";
 
