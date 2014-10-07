@@ -195,8 +195,8 @@
           <!-- Submenu Mantenimiento y reparacion -->
           <li class="dropdown-submenu"> <a href="#">Reparaci&#243;n/Mantenimiento</a>
             <ul class="dropdown-menu">
-              <li><a href="#" onclick="cargar('#panel1','m_manto/registro_materiales.php')">Registro materiales utilizados</a></li>
               <li><a href="#" onclick="cargar('#panel1','m_manto/registro_trabajo.php')">Registro trabajo realizado</a></li>
+              <li><a href="#" onclick="cargar('#panel1','m_manto/registro_materiales.php')">Registro materiales utilizados</a></li>
             </ul>
           </li><!--Fin de Modulo-->
 

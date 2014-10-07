@@ -24,8 +24,8 @@
 				  	<label for="user"  class="controllabel hidden-xs">Nombre de Usuario</label>
 				</div>
 				<div class="col-md-2 col-sm-3  col-xs-8">
-					<input id="user" type="text" class="form-control form-text" 
-				  	size="25" placeholder="Ingrese usuario"></div>
+					<input  title="Ingrese su usuario" id="user"  type="text" class="form-control form-text" 
+				  	size="25" placeholder="Ingrese usuario" required></div>
 			</div>
 
 			<div class="row">
@@ -34,7 +34,7 @@
 				</div>
 				<div class="col-md-2 col-sm-3 col-xs-8">
 					<input id="pass" type="password" class="form-control form-text" 
-				  	size="25" placeholder="Ingrese contraseña"></div>
+				  	size="25" placeholder="Ingrese contraseña" title="Ingrese su contraseña" required></div>
 			</div>
 			<br>
 

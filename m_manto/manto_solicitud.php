@@ -27,15 +27,15 @@
 							<th>Estado</th>
 						</tr>
 						<tr>
-							<td>N001-001</td>
+							<td>SR-0000001</td>
 							<td>Gerencia de Servicio</td>
-							<td>Pick Up</td>
+							<td>N001-001</td>
 							<td>Pendiente</td>
 						</tr>
 						<tr>
-							<td>N001-002</td>
+							<td>SR-0000002</td>
 							<td>Activo Fijo</td>
-							<td>Furgoneta</td>
+							<td>N001-002</td>
 							<td>Autorizado</td>
 						</tr>
 						

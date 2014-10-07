@@ -21,7 +21,7 @@
 
 				<div class="row text_center">
 					<br>
-					<label for="idSoliCompra"  class="controllabel hidden-xs">Artículos</label>
+					<label for="tabla"  class="controllabel hidden-xs">Artículos</label>
 				</div>
 				<div class="row">
 

@@ -8,10 +8,10 @@
 		<div class="modal-body">
 			<!-- Inicio de los objetos del formulario mediante filas -->
 			<div class="row">
-				<div class="col-md-5 col-sm-5"><label for="idconductor"  class="controllabel hidden-xs">Id  art&#237;culo</label>
+				<div class="col-md-5 col-sm-5"><label for="idArticulo"  class="controllabel hidden-xs">Id  art&#237;culo</label>
 				</div>
-				<div class="col-md-4 col-sm-4"><input id="idconductor" type="text" readonly="readonly" class="form-control form-text" 
-				  	size="25" value="Id_conductor"></div>
+				<div class="col-md-4 col-sm-4"><input id="idArticulo" type="text" readonly="readonly" class="form-control form-text" 
+				  	size="25" value="id del Articulo"></div>
 			</div>
 
 			<div class="row"><!-- Id Solicitud Compra -->

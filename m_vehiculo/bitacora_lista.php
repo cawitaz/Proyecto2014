@@ -11,12 +11,11 @@
 					<div class="btn-group">
 						<span class="glyphicon glyphicon-search"></span>
 							</span> <input type="button" value="Buscar"> 
-						
 					</div>
-					
-
 				</div>
+
 				<br>
+
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						

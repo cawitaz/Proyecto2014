@@ -27,7 +27,7 @@
 							<th>Otro</th>
 						</tr>
 						<tr>
-							<td>N001-001</td>
+							<td>SR-0000001</td>
 							<td>Gerencia de Servicio</td>
 							<td>Autorizado</td>
 							<td>
@@ -35,7 +35,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>N001-002</td>
+							<td>SR-0000001</td>
 							<td>Activo Fijo</td>
 							<td>Denegado</td>
 							<td>

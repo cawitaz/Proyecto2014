@@ -1,18 +1,13 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+﻿
 	<div class="panel panel-primary" >
-			<div class="panel-heading "><h4>Ingresar bit&#225cora de veh&#237culo</h4></div>
+			<div class="panel-heading "><h4>Ingresar bit&#225;cora de veh&#237;culo</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
 				<form class="form-horizontal form-inline" role="form">
 
 				<!-- Inicio de los objetos del formulario mediante filas -->
 				<div class="row">
-					<div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bit&#225cora de veh&#237culo </label>
+					<div class="col-md-5"><label for="idBitacora" class="controllabel hidden-xs">Bit&#225;cora de veh&#237;culo </label>
 				    </div>
 				    <div class="col-md-4" id="idBitacora" > 
 				    	<select class="form-control">
@@ -42,7 +37,7 @@
 				
 
 				<div class="row"><!-- Destino -->
-				  <div class="col-md-5"><label for="destino" class="controllabel hidden-xs">Destino del veh&#237culo</label> </div>
+				  <div class="col-md-5"><label for="destino" class="controllabel hidden-xs">Destino del veh&#237;culo</label> </div>
 				  <div class="col-md-4"><input type="text" class="form-control" size="25" id="destino"
 								placeholder="Ingrese el destino"></div>
 				</div>
@@ -74,5 +69,3 @@
 				</form>
 			</div>
 	</div>
-</body>
-</html>
