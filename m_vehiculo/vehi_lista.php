@@ -25,12 +25,13 @@
 					<tr>
 							<center><th>Vehículo</th></center>
 							<center><th>Placa</th></center>
+							<center><th>Modelo</th></center>
 							<center><th>Tipo</th></center>
 						</tr>				
 												
 	<?php
-$server = "MARIELOS-PC\SQLEXPRESS";
-$connectionInfo = array( "Database"=>"BD_FlotaVehicular", "UID"=>"sa", "PWD"=>"carlos" );
+$server = "(local)\SQLEXPRESS";
+$connectionInfo = array( "Database"=>"BD_FlotaVehicular", "UID"=>"sa", "PWD"=>"base_dsi" );
 $conn = sqlsrv_connect( $server, $connectionInfo );
 
 
@@ -47,10 +48,11 @@ if( $stmt === false) {
 while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
       $uno=	$row['AM_idVehiculo'];
       $dos=	$row['AM_numPlacas'];
-      $tres=$row['AM_tipoVehiculo'];
+      $tres=$row['AM_marcaVehiculo'];
+      $cuatro=$row['AM_tipoVehiculo'];
      
       echo"<tr>";
-      echo "<td>$uno</td><td>$dos</td><td>$tres</td>";
+      echo "<td>$uno</td><td>$dos</td><td>$tres</td><td>$cuatro</td>";
       echo '<td><center><a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones </a></center></td>';
       echo "</tr>";
      

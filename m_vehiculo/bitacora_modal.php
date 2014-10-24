@@ -1,4 +1,10 @@
-﻿<div class="modal-dialog">
+﻿<?php
+$idBitacora=$_GET['uno'];
+$destino=$_GET['dos'];
+
+?>
+
+<div class="modal-dialog">
 	<div class="modal-content">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -7,17 +13,17 @@
 		<div class="modal-body">
 			<!-- Inicio de los objetos del formulario mediante filas -->
 			<div class="row">
-				<div class="col-md-5 col-sm-5"><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</label>
+				<div class="col-md-5 col-sm-5"><center><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</center></label>
 				</div>
-				<div class="col-md-4 col-sm-4"><input id="idBitacora" type="text" class="form-control form-text" 
-					size="25" readonly="readonly" value="IdBitacora"></div>
+				<div class="col-md-4 col-sm-4"><center><input id="idBitacora" type="text" class="form-control form-text" 
+					size="25" readonly="readonly" value="<?php echo "$idBitacora" ?>"</center></div>
 			</div>
 
 			<div class="row"><!-- Fecha sustraida del sistema -->
 				<div class="col-md-5 col-sm-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 				</div>
 				<div class="col-md-4 col-sm-4"><input id="fecha" type="text" class="form-control form-text" 
-					size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha"></div>
+					size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha" ></div>
 			</div>
 
 			<div class="row"><!-- Conductor -->
@@ -36,8 +42,8 @@
 				<div class="col-md-5 col-sm-5"><label for="destino" class="controllabel hidden-xs">Destino</label>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<input id="destino" type="text" class="form-control form-text" 
-					size="25" placeholder="Ingrese el destino"></div>
+					<input id="destino" type="text" class="form-control form-text" value="<?php echo "$destino" ?>"
+					size="25" placeholder="Ingrese el destino" > </div>
 			</div><!-- Fin de ingrese destino -->
 
 			<div class="row"> 
@@ -55,6 +61,8 @@
 			</div><!--Fin de km Inicial -->
 
 			<div class="row">
+			</body>
+			</html>
 				<div class="col-md-5 col-sm-5"><label for="kmFinal" class="controllabel hidden-xs">Kilometraje final</label> </div>
 				<div class="col-md-4 col-sm-4"><input type="text" class="form-control" size="25" id="kmFinal"
 					value="kmFinal"></div>

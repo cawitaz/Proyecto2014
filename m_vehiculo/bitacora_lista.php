@@ -4,6 +4,7 @@
 		</div>
 		<div class="panel-body" align="center">
 			<!-- Inicio del formulario -->
+			
 			<form class="form-horizontal form-inline" role="form">
 				<div class="row center-text">
 					<br>
@@ -38,11 +39,13 @@ while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
       $uno=	$row['AM_idBitacora'];
       $dos=	$row['AM_destino'];
       $tres=$row['AM_idVehiculo'];
-     
+    
       echo"<tr>";
       echo "<td>$uno</td><td>$dos</td><td>$tres</td>";
-      echo '<td><center><a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones </a></center></td>';
+      echo '<td><center><a data-toggle="modal"  href="/m_vehiculo/bitacora_modal.php?uno=' . $row['AM_idBitacora'] .'&dos=' . $row['AM_destino'] . '" class="btn btn-default btn-xs">Más opciones </a></center></td>';
       echo "</tr>";
+
+      
      
 
 }

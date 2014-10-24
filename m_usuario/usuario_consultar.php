@@ -1,5 +1,4 @@
-﻿
-	<div class="panel panel-primary" >
+﻿	<div class="panel panel-primary" >
 		<div class="panel-heading "><h4>Datos de Usuario</h4>
 		</div>
 		<div class="panel-body" align="center">
@@ -26,20 +25,9 @@
 							<th>Estado</th>
 							<th>Otro</th>
 						</tr>
-						<tr>
-							<td>Juan Perez</td>
-							<td>Habilitado</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						<tr>
-							<td class="celda2">Marta Sanchez</td>
-							<td>Habilitado</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
+						<?php
+						include "../m_usuario/sql_select_usuario_consultar.php"
+						?>
 					</table>
 				</div>
 
