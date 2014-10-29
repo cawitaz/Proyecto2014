@@ -1,29 +1,45 @@
-﻿<?php
-$idBitacora=$_GET['uno'];
-$destino=$_GET['dos'];
+﻿<html>
+<head>
 
-?>
+	<script type="text/javascript">
+	$('#idBitacoraModal').val('campo temporal');
+
+    </script>
+	</head>
+	<body>
+
+		<?php 
+	    $idBitacora='';
+	    if(isset($_POST['idBitacora'])){
+		$idBitacora= $_POST['idBitacora'];
+		global $sql;
+		//Realizar una solicitud de información
+
+		include("sql_select_bitacora_modal.php?id=$idBitacora");
+			}
+
+	 ?>
 
 <div class="modal-dialog">
 	<div class="modal-content">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			<h4 class="modal-title">Opciones</h4>
+			<h4 class="modal-title"><label id="idBitacoraModal"><?php echo $idBitacora; ?></label></h4>
 		</div>
 		<div class="modal-body">
 			<!-- Inicio de los objetos del formulario mediante filas -->
 			<div class="row">
-				<div class="col-md-5 col-sm-5"><center><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</center></label>
+				<div class="col-md-5 col-sm-5"><label for="idBitacora" class="controllabel hidden-xs">Bitácora del vehículo</label>
 				</div>
 				<div class="col-md-4 col-sm-4"><center><input id="idBitacora" type="text" class="form-control form-text" 
-					size="25" readonly="readonly" value="<?php echo "$idBitacora" ?>"</center></div>
+					size="25" readonly="readonly" value="<?php echo $idBitacora; ?>"</center></div>
 			</div>
 
 			<div class="row"><!-- Fecha sustraida del sistema -->
 				<div class="col-md-5 col-sm-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label>
 				</div>
 				<div class="col-md-4 col-sm-4"><input id="fecha" type="text" class="form-control form-text" 
-					size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha" ></div>
+					size="25"  value="dd/mm/aaaa" placeholder="Ingrese fecha"</div>
 			</div>
 
 			<div class="row"><!-- Conductor -->
@@ -42,8 +58,8 @@ $destino=$_GET['dos'];
 				<div class="col-md-5 col-sm-5"><label for="destino" class="controllabel hidden-xs">Destino</label>
 				</div>
 				<div class="col-md-4 col-sm-4">
-					<input id="destino" type="text" class="form-control form-text" value="<?php echo "$destino" ?>"
-					size="25" placeholder="Ingrese el destino" > </div>
+					<input id="destino" type="text" class="form-control form-text" value="<?php echo $idBitacora; ?>"
+					size="25" placeholder="Ingrese el destino" >  </div>
 			</div><!-- Fin de ingrese destino -->
 
 			<div class="row"> 
@@ -103,3 +119,5 @@ $destino=$_GET['dos'];
 		</div>
 	</div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
+</body>
+</html>

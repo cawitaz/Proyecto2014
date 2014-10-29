@@ -53,6 +53,8 @@
         foco_no.style.background="white";
         }
 
+   
+
      </script> 
 	</head>
 <body>
@@ -60,13 +62,13 @@
 			<div class="panel-heading "><h4>Ingreso de Vehículo</h4></div>
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
-				<form class="form-horizontal form-inline" role="form">
+				<form class="form-horizontal form-inline" role="form" >
 					<!-- Inicio de los objetos del formulario mediante filas -->
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="idVehi"  class="controllabel hidden-xs">Id Vehiculo</label>
 					  </div>
 					  <div class="col-md-3 col-sm-3"><input title="Id Vehiculo" id="idVehi" type="text" class="form-control form-text" 
-					  	size="20" placeholder="Codigo" required/> </div>
+					  	size="20" placeholder="Codigo"  required/> </div>
 					</div>
 
      					<div class="row">

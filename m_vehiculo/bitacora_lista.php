@@ -1,4 +1,18 @@
-﻿
+﻿<html>
+<head>
+	<script type="text/javascript">	
+	var idSelecc='';
+	function seleccionado (id) {
+		idSelecc=id;
+		$('#idBitacora').val(id);
+		$( "#miModal" ).load( "m_vehiculo/bitacora_modal.php", { "idBitacora": id } );
+		
+		//window.location.href = '#miModal';
+	}
+	
+	</script>
+</head>
+<body>
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Bitácora de Vehículos</h4>
 		</div>
@@ -27,32 +41,9 @@
 						</tr>				
 												
 	<?php
-include("conexion.php");
-
-$sql = "SELECT * FROM FVAM_bitacoras_2014";
-$stmt = sqlsrv_query( $conn, $sql );
-if( $stmt === false) {
-    die( print_r( sqlsrv_errors(), true) );
-}
-
-while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-      $uno=	$row['AM_idBitacora'];
-      $dos=	$row['AM_destino'];
-      $tres=$row['AM_idVehiculo'];
-    
-      echo"<tr>";
-      echo "<td>$uno</td><td>$dos</td><td>$tres</td>";
-      echo '<td><center><a data-toggle="modal"  href="/m_vehiculo/bitacora_modal.php?uno=' . $row['AM_idBitacora'] .'&dos=' . $row['AM_destino'] . '" class="btn btn-default btn-xs">Más opciones </a></center></td>';
-      echo "</tr>";
-
+include "sql_select_bitacora_consultar.php";
       
-     
-
-}
-
-sqlsrv_free_stmt( $stmt);
-
-?>
+     ?>
 					</table>
 				</div>
 
@@ -62,15 +53,17 @@ sqlsrv_free_stmt( $stmt);
 					
 					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
 						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
-					</div>
+										</div>
 					<br>
 				</div>
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
+	<input type="hidden" id="idUsuario">
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
 		<?php include("bitacora_modal.php"); ?>
 	</div><!-- /.modal -->
+</body>
+	</html>

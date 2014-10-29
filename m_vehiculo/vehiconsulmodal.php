@@ -1,8 +1,29 @@
+<html>
+<head>
+
+	<script type="text/javascript">
+	$('#idVehiculoModal').val('campo temporal');
+
+    </script>
+	</head>
+	<body>
+
+		<?php 
+	    $idVehiculo='';
+	    if(isset($_POST['idVehiculo'])){
+		$idVehiculo= $_POST['idVehiculo'];
+		global $sql;
+		//Realizar una solicitud de información
+
+		include("sql_select_vehiculo_modal.php?id=$idVehiculo");
+			}
+
+	 ?>
 <div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title">Opciones</h4>
+					<h4 class="modal-title">Opciones<label id="idVehiculoModal"><?php echo $idVehiculo; ?></label></h4>
 				</div>
 				<div class="modal-body">
 					<!-- Inicio de los objetos del formulario mediante filas -->
@@ -95,3 +116,5 @@
 				</div>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
+	</body>
+	</html>

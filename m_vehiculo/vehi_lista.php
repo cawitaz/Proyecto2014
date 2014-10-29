@@ -1,6 +1,18 @@
-﻿<?php
-	include("conexion.php");
-	?>
+﻿<html>
+<head>
+	<script type="text/javascript">	
+	var idSelecc='';
+	function seleccionado (id) {
+		idSelecc=id;
+		$('#idVehiculo').val(id);
+		$( "#miModal" ).load( "m_vehiculo/vehiconsulmodal.php", { "idVehiculo": id } );
+		
+		//window.location.href = '#miModal';
+	}
+	
+	</script>
+</head>
+<body>
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Datos de Vehículos</h4>
 		</div>
@@ -26,40 +38,14 @@
 							<center><th>Vehículo</th></center>
 							<center><th>Placa</th></center>
 							<center><th>Modelo</th></center>
-							<center><th>Tipo</th></center>
+							<center><th>Estado</th></center>
 						</tr>				
 												
 	<?php
-$server = "(local)\SQLEXPRESS";
-$connectionInfo = array( "Database"=>"BD_FlotaVehicular", "UID"=>"sa", "PWD"=>"base_dsi" );
-$conn = sqlsrv_connect( $server, $connectionInfo );
 
-
-if( $conn === false ) {
-    die( print_r( sqlsrv_errors(), true));
-}
-
-$sql = "SELECT * FROM FVAM_vehiculo_2014";
-$stmt = sqlsrv_query( $conn, $sql );
-if( $stmt === false) {
-    die( print_r( sqlsrv_errors(), true) );
-}
-
-while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-      $uno=	$row['AM_idVehiculo'];
-      $dos=	$row['AM_numPlacas'];
-      $tres=$row['AM_marcaVehiculo'];
-      $cuatro=$row['AM_tipoVehiculo'];
-     
-      echo"<tr>";
-      echo "<td>$uno</td><td>$dos</td><td>$tres</td><td>$cuatro</td>";
-      echo '<td><center><a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones </a></center></td>';
-      echo "</tr>";
-     
-
-}
-
-sqlsrv_free_stmt( $stmt);
+include "sql_select_vehiculo_consultar.php";
+      
+    
 
 ?>
 						
@@ -80,8 +66,11 @@ sqlsrv_free_stmt( $stmt);
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
+	<input type="hidden" id="idUsuario">
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
 		<?php include("vehiconsulmodal.php"); ?>
 	</div><!-- /.modal -->
+</body>
+</html>

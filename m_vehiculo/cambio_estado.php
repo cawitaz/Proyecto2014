@@ -22,27 +22,20 @@
 					<table id="tabla" class="table table-hover">						
 						<tr>
 							<th>Número de placas</th>
-							<th>Departamento</th>
+							<th>Marca</th>
 							<th>Estado</th>
-							<th>Otro</th>
 						</tr>
-						<tr>
-							<td>N001-001</td>
-							<td>Gerencia de Servicio</td>
-							<td>Habilitado</td>
-							<td>
-								<input type="button" class="btn btn-default btn-xs" value="Cambiar estado">
-							</td>
-						</tr>
-						<tr>
-							<td>N001-002</td>
-							<td>Activo Fijo</td>
-							<td>Deshabilitado</td>
-							<td>
-								<input type="button" class="btn btn-default btn-xs" value="Cambiar estado">
-								
-							</td>
-						</tr>
+										
+		<?php
+
+include "sql_cambiarEstado.php";
+
+
+
+
+?>
+	
+							
 						
 					</table>
 				</div>
