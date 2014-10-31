@@ -19,14 +19,23 @@ function select($sql){
 	}
 
 	while( $row = sqlsrv_fetch_array( $consulta, SQLSRV_FETCH_ASSOC) ) {
+		$id = $row['AM_idUsuario'];
+
 		echo "<tr>	<td>".$row['AM_nombreUsuario']."</td>";
-		if(trim($row['AM_estadoUsuario'])==1)
+		//Definiendo estado
+		$resul="Deshabilitado";
+		if(trim($row['AM_estadoUsuario'])==1){
 			$resul="Habilitado";
-		else 
-			$resul="Deshabilitado";
+		}
+		if (trim($row['AM_estadoUsuario'])==2) {
+			$resul="Habilitado-Pendiente";
+		}
 		echo "<td>".$resul."</td>";
-		echo '<td><a data-toggle=\"modal\" href=\"#miModal\" class=\"btn btn-default btn-xs\">Más opciones</a>
-			</td></tr>';
+		
+		
+
+		echo "<td><a data-toggle=\"modal\" href='#miModal' onclick=\"seleccionado('$id')\" class=\"btn btn-default btn-xs\">Más opciones</a>
+			</td></tr>";
 	}
 
 	sqlsrv_free_stmt( $consulta);
@@ -34,5 +43,5 @@ function select($sql){
 
 }
 
-
+select($sql);
 ?>

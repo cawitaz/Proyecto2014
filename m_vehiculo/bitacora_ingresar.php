@@ -38,16 +38,7 @@
         foco_no.style.background="white";
         }
 
-        function nuevoId () {
-			// body...
-			var url_encabezado = "./m_vehiculo/idBitacora.php";
-			var nom_apell={
-				"destino"	: $('#destino').val(),
-				
-			};
-			obtener(url_encabezado, '#idbitacora', nom_apell);
-		}
-
+       
 		
 
 	</script>
@@ -58,7 +49,7 @@
 			<div class="panel-body" align="center">
 				<!-- Inicio del formulario -->
 				
-				<form    class="form-horizontal form-inline"   id="formulario" role="form" >
+				<form    class="form-horizontal form-inline"   id="formulario" role="form" onsubmit="return false;">
 
 				<!-- Inicio de los objetos del formulario mediante filas -->
 
@@ -90,12 +81,12 @@
 
                   <div class="row"><!-- Destino -->
 				  <div class="col-md-5"><label for="destino"  class="controllabel hidden-xs">Destino </label> </div>
-				  <div class="col-md-4"><input  onfocus="cambiarColor(this)" onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" required/></div>
+				  <div class="col-md-4"><input  onfocus="cambiarColor(this)"  onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" required/></div>
 				 
 				  </div>
                   <div class="row"><!--Conductor -->
 				  <div class="col-md-5"><label for="solicita" class="controllabel hidden-xs">Usuario</label></div>
-				  <div class="col-md-4">
+				  <div class="col-md-3">
 				  <select class="form-control" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"  id="solicita" title="Seleccione un vehiculo">
 	                    <?php
                         
@@ -122,7 +113,7 @@
 				</div>
                      <div class="row"><!--Vehiculo-->
 					<div class="col-md-5"><label for="idVe" class="controllabel hidden-xs"> veh&#237;culo </label></div>
-				    <div class="col-md-4"> 
+				    <div class="col-md-3"> 
 				    	<select class="form-control" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"  id="idVe"  title="Seleccione un vehiculo">
 	                    <?php
                         
@@ -155,7 +146,7 @@
 					
 					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
 						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
-					<div class="col-xs-1 col-md-1"> <input id="enviar" type="button" onclick="ejecuta();" class="btn btn-default btn-primary" 
+					<div class="col-xs-1 col-md-1"> <input id="enviar" type="submit" onclick="ejecuta();" class="btn btn-default btn-primary" 
 						 value="Guardar"/>
 					</div>
 					<br>

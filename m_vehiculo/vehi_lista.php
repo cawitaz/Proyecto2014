@@ -70,7 +70,7 @@ include "sql_select_vehiculo_consultar.php";
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("vehiconsulmodal.php"); ?>
+		
 	</div><!-- /.modal -->
 </body>
 </html>

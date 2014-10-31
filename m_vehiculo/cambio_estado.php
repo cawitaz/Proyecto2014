@@ -1,4 +1,21 @@
 ﻿
+	<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">	
+	var idSelecc='';
+	function seleccionado (id) {
+		idSelecc=id;
+		$('#idVehiculo').val(id);
+		$("#miModal").load( "m_vehiculo/estado_modal.php", { "idVehiculo": id } );
+		
+		//window.location.href = '#miModal';
+	}
+	
+	</script>
+</head>
+<body>
+
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Cambio de estado de vehículos</h4>
 		</div>
@@ -30,13 +47,8 @@
 
 include "sql_cambiarEstado.php";
 
-
-
-
-?>
-	
-							
-						
+?>			
+			
 					</table>
 				</div>
 
@@ -53,3 +65,11 @@ include "sql_cambiarEstado.php";
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
+	<input type="hidden" id="idVehiculo">
+
+	<!-- Bloque modal -->
+	<div id="miModal" class="modal fade">
+			
+	</div><!-- /.modal -->
+</body>
+	</html>

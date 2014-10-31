@@ -1,4 +1,21 @@
-﻿	<div class="panel panel-primary" >
+﻿	<html>
+<head>
+	<script type="text/javascript">	
+	var idSelecc='';
+	function seleccionado (id) {
+		idSelecc=id;
+		$('#idUsuario').val(id);
+		$( "#miModal" ).load( "m_usuario/modalusuarioconsul.php", { "idUsuario": id } );
+		
+		//window.location.href = '#miModal';
+	}
+	
+	</script>
+</head>
+<body>
+
+
+	<div class="panel panel-primary" >
 		<div class="panel-heading "><h4>Datos de Usuario</h4>
 		</div>
 		<div class="panel-body" align="center">
@@ -13,11 +30,14 @@
 							</span>
 						</div>
 					</div>
-					
-
 				</div>
 				<br>
 				<!-- Inicio de los objetos del formulario mediante filas -->
+				<div class="row">
+
+
+
+				</div>
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover" >
 						<tr>
@@ -26,26 +46,29 @@
 							<th>Otro</th>
 						</tr>
 						<?php
-						include "../m_usuario/sql_select_usuario_consultar.php"
+						include "sql_select_usuario_consultar.php";
 						?>
 					</table>
 				</div>
+
 
 				<!-- Botones -->
 				<div class="row center-text">
 					<br>
 					
-					<div class="col-xs-7 col-sm-7 col-md-7"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
+					<div class="btn"> <input type="button" id="cancelar" class="btn btn-default" value="Cancelar" 
 						onclick="limpiar('#panel1');cargar('#panel1', 'template/inicio.php');" ></div>
-					<div class="col-xs-1 col-md-1"> <input type="button" class="btn btn-default btn-primary" value="Guardar">
-					</div>
 					<br>
 				</div>
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
 
+	<input type="hidden" id="idUsuario">
+
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("modalusuarioconsul.php"); ?>
+		<!-- Se procede a cargar acá la ventana modal y luego a ejecutarla-->
 	</div><!-- /.modal -->
+</body>
+</html>

@@ -1,8 +1,7 @@
 <?php
 include '../template/conexion.php';
 
-$sql = "SELECT *
-	FROM FVAM_vehiculo_2014;";
+$sql = "SELECT * 	FROM FVAM_vehiculo_2014;";
 
 //Función 
 function select($sql){
@@ -29,7 +28,7 @@ function select($sql){
 		
 		
 
-		echo "<td><a data-toggle=\"modal\"  class=\"btn btn-default btn-xs\">Más opciones</a>
+		echo "<td><a data-toggle=\"modal\" href='#miModal' onclick=\"seleccionado('$id')\" class=\"btn btn-default btn-xs\">Más opciones</a>
 			</td></tr>";
 	}
 

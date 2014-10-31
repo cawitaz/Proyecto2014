@@ -1,11 +1,12 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
 	<script type="text/javascript">	
 	var idSelecc='';
 	function seleccionado (id) {
 		idSelecc=id;
 		$('#idBitacora').val(id);
-		$( "#miModal" ).load( "m_vehiculo/bitacora_modal.php", { "idBitacora": id } );
+		$("#miModal").load( "m_vehiculo/bitacora_modal.php", { "idBitacora": id } );
 		
 		//window.location.href = '#miModal';
 	}
@@ -59,11 +60,11 @@ include "sql_select_bitacora_consultar.php";
 			</form>
 		</div> <!-- Fin del panel-body -->
 	</div>
-	<input type="hidden" id="idUsuario">
+	<input type="hidden" id="idBitacora">
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("bitacora_modal.php"); ?>
+			
 	</div><!-- /.modal -->
 </body>
 	</html>

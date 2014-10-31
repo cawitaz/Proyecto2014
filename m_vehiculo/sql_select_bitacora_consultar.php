@@ -1,8 +1,7 @@
 <?php
 include '../template/conexion.php';
 
-$sql = "SELECT *
-	FROM FVAM_bitacoras_2014;";
+$sql = "SELECT * FROM FVAM_bitacoras_2014;";
 
 //Función 
 function select($sql){
@@ -24,6 +23,7 @@ function select($sql){
         echo "<tr>	<td>".$row['AM_idBitacora']."</td>";
 		echo "<td>".$row['AM_idVehiculo']."</td>";
 		echo "<td>".$row['AM_destino']."</td>";
+		
 		
 		
 		

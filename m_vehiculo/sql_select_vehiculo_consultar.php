@@ -1,8 +1,7 @@
 <?php
 include '../template/conexion.php';
 
-$sql = "SELECT *
-	FROM FVAM_vehiculo_2014;";
+$sql = "SELECT * FROM FVAM_vehiculo_2014;";
 
 //Función 
 function select($sql){
