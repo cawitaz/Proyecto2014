@@ -2,7 +2,46 @@
 <html>
 <head>
 	<script type="text/javascript">
+var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
+		var campos = {
 
+         idBitacora    : $('#idBitacora').val(), 
+	    destinoModal    : $('#destinoModal').val(), 
+		finali   : $('#finali').val(),
+		Inicial : $('#Inicial').val(),
+		idVe : $('#idVe').val(),
+		idCo : $('#idCo').val(),
+		};
+		
+		// proceso para operaciones intermedias
+		function obtener (url_encabezado, divs, arreglo) {
+			
+			var jqxhr = $.post( url_encabezado, arreglo, function(data) {
+                $(divs).val(data);
+            })
+            .done(function() {
+                //done es una subfuncion que se ejecuta despues del metodo de exito
+            })
+            .fail(function() {
+                //fail es una subfuncion que se ejecuta cuando falla el proceso
+            })
+            .always(function() {
+                //always es una subfuncion que se ejecuta cuando termina el proceso,
+                //independientemente de si se ejecuto con exito o fracaso
+            });
+		}
+		function ejecutar(){
+		campos['idBitacora']       =$('#idBitacora').val();
+		campos['destinoModal']       =$('#destinoModal').val();
+		campos['finali']		=$('#finali').val();
+		campos['Inicial']	=$('#Inicial').val();
+		campos['idVe']	=$('#idVe').val();
+		campos['idCo']	=$('#idCo').val();
+		//alert(campos['descripcion']);
+		
+		ejecutarconsulta(urlparainsertar, campos);
+		
+		}
 	</script>
 	</head>
 	<body>
@@ -32,7 +71,16 @@
 		
 		<div class="modal-body">
 				
-			
+			   
+			   <div class="row">
+					<div class="col-md-5 col-sm-5">
+						<label for="destino" class="controllabel hidden-xs">ID Bitacora</label>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<input type="text" class="form-control" size="25" id="idBitacora" class="btn btn-default" 
+						placeholder="Ingrese destino" value="<?php echo $idBitacora; ?>" >
+					</div>
+				</div>
 			
 				<div class="row">
 					<div class="col-md-5 col-sm-5">
@@ -50,7 +98,7 @@
 						<label for="final" class="controllabel hidden-xs">Kilometraje Final</label>
 					</div>
 					<div class="col-sm-4 col-md-4">
-						<input type="text" class="form-control" size="25" id="final" class="btn btn-default" 
+						<input type="text" class="form-control" size="25" id="finali" class="btn btn-default" 
 						placeholder="Kilometraje Final" value="<?php echo getAM_kmFinal(); ?>"> 
 					</div>
 
@@ -60,7 +108,7 @@
 						<label for="final" class="controllabel hidden-xs">Kilometraje Inicial</label>
 					</div>
 					<div class="col-sm-4 col-md-4">
-						<input type="text" class="form-control" size="25" id="final" class="btn btn-default" 
+						<input type="text" class="form-control" size="25" id="Inicial" class="btn btn-default" 
 						placeholder="Kilometraje Inicial" value="<?php echo getAM_kmInicial(); ?>" >
 					</div>
 				</div>
@@ -133,7 +181,7 @@
 		<div class="modal-footer">
 			<div class="row">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-				<button type="button" class="btn btn-primary">Guardar cambios</button>
+				<button type="button" class="btn btn-primary" onclick= "ejecutar();">Guardar cambios</button>
 			</div>
 		</div>
 	</div><!-- /.modal-content -->
