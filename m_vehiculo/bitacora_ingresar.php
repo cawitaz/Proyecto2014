@@ -38,7 +38,43 @@
         foco_no.style.background="white";
         }
 
-       
+
+
+       function nuevoId () {
+			// body...
+			var url_encabezado = "./m_vehiculo/idBitacora.php";
+			var nom_apell={
+			"destino"	: $('#destino').val(),
+			};
+			obtener(url_encabezado, '#idbitacora', nom_apell);
+		}
+
+		// proceso para operaciones intermedias
+		function obtener (url_encabezado, divs, arreglo) {
+			
+			var jqxhr = $.post( url_encabezado, arreglo, function(data) {
+                $(divs).val(data);
+            })
+            .done(function() {
+                //done es una subfuncion que se ejecuta despues del metodo de exito
+            })
+            .fail(function() {
+                //fail es una subfuncion que se ejecuta cuando falla el proceso
+            })
+            .always(function() {
+                //always es una subfuncion que se ejecuta cuando termina el proceso,
+                //independientemente de si se ejecuto con exito o fracaso
+            });
+		}
+
+		//Validación del formulario usando HTML5
+		$('#guardar').click(function(){
+		    if($("form")[0].checkValidity()) {
+		        //Procedemos a insertar 
+		        ejecuta();
+		    };
+		});
+
 		
 
 	</script>
@@ -56,32 +92,47 @@
 				<div class="row"><!-- #bitacora -->
 				  <div class="col-md-5"><label for="idbitacora" class="controllabel hidden-xs">Numero de Bitacora</label> </div>
 				  <div class="col-md-4"><input onfocus="cambiarColor(this)" onBlur="defectoColor (this)" title="Ingrese ID"  type="text" class="form-control" size="20" id="idbitacora" 
-								 placeholder="BI-000"     required/></div>
+								 placeholder="BI-000"     readonly="readonly"  required/></div>
 				</div>
 
 
 				
 				<div class="row"><!-- Fecha sustraida del sistema -->
 					<div class="col-md-5"><label for="fecha"  class="controllabel hidden-xs">Fecha </label></div>
-					<div class="col-md-4"><input onfocus="cambiarColor(this)" onBlur="defectoColor (this)" title="Fecha automatica"  id="fecha" type="text" class="form-control form-text" 
-						size="20"  readonly="readonly" value="<?php echo date("Y-m-d"); ?>" /></div>
+					<div class="col-md-4"><input onfocus="cambiarColor(this)" onBlur="defectoColor (this)" title="Fecha automatica"  id="fecha" type="date" class="form-control form-text" 
+						size="20"   value="<?php echo date("Y-m-d"); ?>" /></div>
 				</div>
 
 
 				<div class="row"><!--Conductor -->
 				  <div class="col-md-5"><label for="conductor" class="controllabel hidden-xs">Conductor </label> </div>
-				  <div class="col-md-4"> 
+				  <div class="col-md-3"> 
 				  	<select class="form-control" onfocus="cambiarColor(this)" onBlur="defectoColor (this)" id="conductor" title="seleccione un conductor">
-				        <option value="C0-001">Conductor 1</option>
-				        <option value="C0-002">Conductor 2</option>
-				        <option value="C0-003">Conductor 3</option>
+				       <?php
+                        
+                        include ("conexion.php");
+
+                        $sql = "SELECT * FROM FVAM_conductor_2014";
+                        $stmt = sqlsrv_query( $conn, $sql );
+                        if( $stmt === false) {
+                        die( print_r( sqlsrv_errors(), true) );
+                          }
+
+                        while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
+                        echo"<option>";	
+                        echo $row['AM_idConductor']."<br />";
+                        echo"</option>";	
+                        }
+ 
+                         sqlsrv_free_stmt( $stmt);
+                         ?>
 				      </select>
 				  	<!-- Combobox para los distintos conductores--></div>
 				</div>
 
                   <div class="row"><!-- Destino -->
 				  <div class="col-md-5"><label for="destino"  class="controllabel hidden-xs">Destino </label> </div>
-				  <div class="col-md-4"><input  onfocus="cambiarColor(this)"  onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" required/></div>
+				  <div class="col-md-4"><input onchange="nuevoId ();" onfocus="cambiarColor(this)"  onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" required/></div>
 				 
 				  </div>
                   <div class="row"><!--Conductor -->

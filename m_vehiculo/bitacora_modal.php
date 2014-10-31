@@ -42,6 +42,13 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 		ejecutarconsulta(urlparainsertar, campos);
 		
 		}
+			function cambiarColor (foco_si) {
+       foco_si.style.background="#27b2f3";
+        }
+        function defectoColor (foco_no) {
+        foco_no.style.background="white";
+        }
+
 	</script>
 	</head>
 	<body>
@@ -78,7 +85,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 					</div>
 					<div class="col-sm-4 col-md-4">
 						<input type="text" class="form-control" size="25" id="idBitacora" class="btn btn-default" 
-						placeholder="Ingrese destino" value="<?php echo $idBitacora; ?>" >
+						placeholder="Ingrese destino" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"value="<?php echo $idBitacora; ?>" >
 					</div>
 				</div>
 			
@@ -88,7 +95,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 					</div>
 					<div class="col-sm-4 col-md-4">
 						<input type="text" class="form-control" size="25" id="destinoModal" class="btn btn-default" 
-						placeholder="Ingrese destino" value="<?php echo getAM_destino(); ?>" >
+						placeholder="Ingrese destino" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"value="<?php echo getAM_destino(); ?>" >
 					</div>
 				</div>
 
@@ -99,7 +106,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 					</div>
 					<div class="col-sm-4 col-md-4">
 						<input type="text" class="form-control" size="25" id="finali" class="btn btn-default" 
-						placeholder="Kilometraje Final" value="<?php echo getAM_kmFinal(); ?>"> 
+						placeholder="Kilometraje Final" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"value="<?php echo getAM_kmFinal(); ?>"> 
 					</div>
 
 				</div>
@@ -109,7 +116,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 					</div>
 					<div class="col-sm-4 col-md-4">
 						<input type="text" class="form-control" size="25" id="Inicial" class="btn btn-default" 
-						placeholder="Kilometraje Inicial" value="<?php echo getAM_kmInicial(); ?>" >
+						placeholder="Kilometraje Inicial" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"value="<?php echo getAM_kmInicial(); ?>" >
 					</div>
 				</div>
 
@@ -118,7 +125,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 						<label for="final" class="controllabel hidden-xs">Vehiculo</label>
 					</div>
 					<div class="col-sm-4 col-md-4">
-				<select class="form-control"   id="idVe"  title="Seleccione un vehiculo">
+				<select class="form-control"   id="idVe"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"title="Seleccione un vehiculo">
 	                    <?php
                         
                         include ("conexion.php");
@@ -149,7 +156,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 						<label for="final" class="controllabel hidden-xs">Conductor</label>
 					</div>
 					<div class="col-sm-4 col-md-4">
-				<select class="form-control"   id="idCo"  title="Seleccione un Conductor">
+				<select class="form-control"   id="idCo"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"title="Seleccione un Conductor">
 	                    <?php
                         
                         include ("conexion.php");

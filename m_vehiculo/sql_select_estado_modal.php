@@ -41,6 +41,7 @@ $sql = "SELECT * FROM FVAM_vehiculo_2014 WHERE AM_idVehiculo='$idVehiculo'; ";
 	//Proceso extra
 	while( $row = sqlsrv_fetch_array( $consulta, SQLSRV_FETCH_ASSOC) ) {
 		setAM_estadoVehiculo($row['AM_estadoVehiculo']);
+			setAM_numPlacas($row['AM_numPlacas']);
 	
 		
 		
