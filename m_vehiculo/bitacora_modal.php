@@ -5,9 +5,9 @@
 var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 		var campos = {
 
-         idBitacora    : $('#idBitacora').val(), 
-	    destinoModal    : $('#destinoModal').val(), 
-		finali   : $('#finali').val(),
+        idBitacora    : $('#idBitacora').val(), 
+	    destinoModal  : $('#destinoModal').val(), 
+		finali        : $('#finali').val(),
 		Inicial : $('#Inicial').val(),
 		idVe : $('#idVe').val(),
 		idCo : $('#idCo').val(),
