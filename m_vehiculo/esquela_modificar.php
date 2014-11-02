@@ -1,4 +1,18 @@
-﻿
+﻿<html>
+<head>
+	<script type="text/javascript">	
+	var idSelecc='';
+	function seleccionado (id) {
+		idSelecc=id;
+		$('#idEsquela').val(id);
+		$( "#miModal" ).load( "m_vehiculo/esquela_modal.php", { "idEsquela": id } );
+		
+		//window.location.href = '#miModal';
+	}
+	
+	</script>
+</head>
+<body>
 	<div class="panel panel-default panel-primary" >
 		<div class="panel-heading "><h4>Datos de póliza de los Vehículos</h4>
 		</div>
@@ -21,28 +35,19 @@
 				<div class="table-responsive">
 					<table id="tabla" class="table table-hover">						
 						<tr>
-							<th>Número de esquela</th>
+							<th># de esquela</th>
 							<th>Conductor</th>
 							<th>Monto</th>
-							<th>Otro</th>
+							<th>Vehiculo</th>
 						</tr>
-						<tr>
-							<td>EE000-0001</td>
-							<td>Conductor 1</td>
-							<td>$400.00</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						<tr>
-							<td>EE000-0002</td>
-							<td>Conductor 2</td>
-							<td>$200.00</td>
-							<td>
-								<a data-toggle="modal" href="#miModal" class="btn btn-default btn-xs">Más opciones</a>
-							</td>
-						</tr>
-						
+						<?php
+
+include "sql_select_esquela_consultar.php";
+      
+    
+
+?>
+			
 					</table>
 				</div>
 
@@ -62,5 +67,7 @@
 
 	<!-- Bloque modal -->
 	<div id="miModal" class="modal fade">
-		<?php include("esquela_modal.php"); ?>
+		
 	</div><!-- /.modal -->
+</body>
+</html>

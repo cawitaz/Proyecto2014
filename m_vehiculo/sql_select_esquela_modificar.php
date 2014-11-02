@@ -2,20 +2,18 @@
 //Agregamos conexion a la base de datos
 include '../template/conexion.php';
 //Si detecta post hacer operación
-if(isset($_POST['idBitacora'])){
+if(isset($_POST['idEsquela'])){
 	//Obteniendo campos pasados por post
-	 $idBitacora    = trim($_POST['idBitacora']);
-	 $destinoModal    = trim($_POST['destinoModal']);
-	 $finali   = trim($_POST['finali']);
-	 $Inicial = trim($_POST['Inicial']);
-	 $idVe = trim($_POST['idVe']);
-	 $idCo = trim($_POST['idCo']);
-	  $salida = trim($_POST['salida']);
+	 $idEsquela    = trim($_POST['idEsquela']);
+	 $conductor   = trim($_POST['conductor']);
+	 $montoEsquela   = trim($_POST['montoEsquela']);
+	 $vehiculo = trim($_POST['vehiculo']);
+	
 }
 
 //Primera sentencia
 //echo $idManto;
-$sql = "update FVAM_bitacoras_2014 set AM_destino = '$destinoModal', AM_kmInicial = '$Inicial',AM_kmFinal = '$finali' ,AM_idVehiculo = '$idVe',AM_idConductor = '$idCo', AM_hrSalida = '$salida' where AM_idBitacora = '$idBitacora';";
+$sql = "update FVAM_Esquela_2014 set AM_nombreConductor = '$conductor', AM_montoEsquela = '$montoEsquela',AM_idVehiculo = '$vehiculo'where AM_numEsuquela = '$idEsquela';";
 //echo $sql;
 
 //Iniciamos la actualizacion en base de datos

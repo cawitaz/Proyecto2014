@@ -29,6 +29,8 @@
 
 			//Para más información ver template/encabezado.php
 			ejecutarconsulta(urlparainsertar, campos);
+			reiniciarForm();
+
 		};
 
 		function cambiarColor (foco_si) {
@@ -74,6 +76,12 @@
 		        ejecuta();
 		    };
 		});
+
+		//Coloca los campos en blanco
+		function reiniciarForm(){
+			$("form")[0].reset();
+			
+		}
 
 		
 
@@ -132,7 +140,7 @@
 
                   <div class="row"><!-- Destino -->
 				  <div class="col-md-5"><label for="destino"  class="controllabel hidden-xs">Destino </label> </div>
-				  <div class="col-md-4"><input onchange="nuevoId ();" onfocus="cambiarColor(this)"  onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" required/></div>
+				  <div class="col-md-4"><input onchange="nuevoId ();" onfocus="cambiarColor(this)"  onBlur="defectoColor (this)" title="Ingrese Destino" type="text" class="form-control"  size="20" id="destino" placeholder="Ingrese el Destino" ></div>
 				 
 				  </div>
                   <div class="row"><!--Conductor -->

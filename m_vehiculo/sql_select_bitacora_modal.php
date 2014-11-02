@@ -4,7 +4,7 @@ include '../template/conexion.php';
 $sql = "SELECT * 	FROM FVAM_bitacoras_2014 WHERE AM_idBitacora =; ";
 
 	//Creación de variables en campos vacios
-$AM_fechaBitacora = ""; $AM_idConductor = ""; $AM_destino = ""; $AM_idUsuario = "";$AM_idVehiculo = "";$AM_kmInicial="";$AM_kmFinal="";
+$AM_fechaBitacora = ""; $AM_idConductor = ""; $AM_destino = ""; $AM_idUsuario = "";$AM_idVehiculo = "";$AM_kmInicial="";$AM_kmFinal="";$AM_hrSalida="";
 $AM_idBitacora;
 
 setAM_idBitacora($idBitacora);
@@ -47,6 +47,7 @@ $sql = "SELECT * FROM FVAM_bitacoras_2014 WHERE AM_idBitacora='$idBitacora'; ";
 		setAM_idVehiculo($row['AM_idVehiculo']);
 		setAM_kmInicial($row['AM_kmInicial']);
 		setAM_kmFinal($row['AM_kmFinal']);
+		setAM_hrSalida($row['AM_hrSalida']);
 		
 
 	}
@@ -145,6 +146,15 @@ function setAM_kmInicial($kmInicial)
 function getAM_kmInicial()
 {
 	return $GLOBALS['AM_kmInicial'];
+}
+function setAM_hrSalida($AM_hrSalida)
+{
+	$GLOBALS['AM_hrSalida'] = $AM_hrSalida;
+}
+
+function getAM_hrSalida()
+{
+	return $GLOBALS['AM_hrSalida'];
 }
 
 

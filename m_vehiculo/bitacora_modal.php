@@ -11,6 +11,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 		Inicial : $('#Inicial').val(),
 		idVe : $('#idVe').val(),
 		idCo : $('#idCo').val(),
+		salida: $('#salida').val(),
 		};
 		
 		// proceso para operaciones intermedias
@@ -37,6 +38,7 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 		campos['Inicial']	=$('#Inicial').val();
 		campos['idVe']	=$('#idVe').val();
 		campos['idCo']	=$('#idCo').val();
+		campos['salida']	=$('#salida').val();
 		//alert(campos['descripcion']);
 		
 		ejecutarconsulta(urlparainsertar, campos);
@@ -181,6 +183,8 @@ var urlparainsertar="./m_vehiculo/sql_select_bitacora_modificar.php";
 
 				    	</div>
 				</div>
+
+				
 
 				
 				

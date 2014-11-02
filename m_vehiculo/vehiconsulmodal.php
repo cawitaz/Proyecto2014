@@ -15,6 +15,7 @@
 		tarjeVehi : $('#tarjeVehi').val(),
 
 		};
+
 		
 		// proceso para operaciones intermedias
 		function obtener (url_encabezado, divs, arreglo) {
@@ -45,7 +46,13 @@
 		//alert(campos['descripcion']);
 		
 		ejecutarconsulta(urlparainsertar, campos);
+		reiniciarForm();
 		
+		}
+
+		function reiniciarForm(){
+			$("form")[0].reset();
+			
 		}
 			function cambiarColor (foco_si) {
        foco_si.style.background="#27b2f3";

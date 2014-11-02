@@ -44,6 +44,7 @@
 
 			//Para más información ver template/encabezado.php
 			ejecutarconsulta(urlparainsertar, campos);
+			reiniciarForm();
 		};
 
 		function cambiarColor (foco_si) {
@@ -53,7 +54,11 @@
         foco_no.style.background="white";
         }
 
-   
+   function reiniciarForm(){
+			$("form")[0].reset();
+			
+		}
+
 
      </script> 
 	</head>
@@ -68,7 +73,7 @@
 					  <div class="col-md-5 col-sm-5"><label for="idVehi"  class="controllabel hidden-xs">Id Vehiculo</label>
 					  </div>
 					  <div class="col-md-3 col-sm-3"><input title="Id Vehiculo" id="idVehi" type="text" class="form-control form-text" 
-					  	size="20" placeholder="Codigo"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/> </div>
+					  	size="20" placeholder="Codigo"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"> </div>
 					</div>
 
      					<div class="row">
@@ -90,40 +95,40 @@
 						<div class="col-md-5 col-sm-5"><label for="colorVehi" class="controllabel hidden-xs">Color</label>
 						</div>
 						<div class="col-md-3 col-sm-3"><input id="colorVehi" type="text" class="form-control form-text" 
-					  	 size="20" placeholder="Ingrese color de vehículo" onfocus="cambiarColor(this)" onBlur="defectoColor (this)" required/></div>
+					  	 size="20" placeholder="Ingrese color de vehículo" onfocus="cambiarColor(this)" onBlur="defectoColor (this)" ></div>
 					</div>
 
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="marcaVehi" class="controllabel hidden-xs">Marca</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Ingrese Marca de Automovil" type="text" class="form-control" size="20" id="marcaVehi"
-									placeholder="Ingrese la marca" onfocus="cambiarColor(this)" onBlur="defectoColor (this)" required/></div>
+									placeholder="Ingrese la marca" onfocus="cambiarColor(this)" onBlur="defectoColor (this)" ></div>
 					</div><!--Fin de marca -->
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="yearVehi" class="controllabel hidden-xs">A&#241o</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="introduzca año del vehiculo" type="number" class="form-control hasDatepicker" size="20" id="yearVehi"
-									placeholder="Ingrese el A&#241o" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									placeholder="Ingrese el A&#241o" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del año -->
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="chasisVehi" class="controllabel hidden-xs">Chasis #</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Ingrese Numero de Chasis" type="text" class="form-control" size="20" id="chasisVehi"
-									placeholder="Ingrese n&#250mero de Chasis"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									placeholder="Ingrese n&#250mero de Chasis"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del chasis -->
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="idplacas"  class="controllabel hidden-xs">Placa</label>
 					  </div>
 					  <div class="col-md-3 col-sm-3"><input title="Placas" id="placas" type="text" class="form-control form-text" 
-					  	size="20" placeholder="Ingrese la placa"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)" required/> </div>
+					  	size="20" placeholder="Ingrese la placa"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)" > </div>
 					</div>
 
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="tarjeVehi" class="controllabel hidden-xs">Tarjeta</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title"Ingrese #Tarjeta"type="text" class="form-control" size="20" id="tarjeVehi"
-									placeholder="Ingrese tarjeta circulaci&#243n" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									placeholder="Ingrese tarjeta circulaci&#243n" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del  -->
 
 					<div class="row">
@@ -141,19 +146,19 @@
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="kiloVehi" class="controllabel hidden-xs">Kilometraje actual</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Kilometraje" type="text" class="form-control" size="20" id="kiloVehi"
-									placeholder="Ingrese  actual kilometraje" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									placeholder="Ingrese  actual kilometraje" onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del  -->
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="motorVehi" class="controllabel hidden-xs">Motor #</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Ingrese # Motor"type="text" class="form-control" size="20" id="motorVehi"
-									placeholder="N&#250mero de Motor"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									placeholder="N&#250mero de Motor"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del  -->
 
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="emiPlacaVehi" class="controllabel hidden-xs">Fecha de Emisi&#243n de placas</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Fecha de Emision"type="date" class="form-control" size="20" id="emiPlacaVehi"
-									value="dd/mm/aaaa" placeholder="Fecha de Emisi&#243n de placas"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									value="dd/mm/aaaa" placeholder="Fecha de Emisi&#243n de placas"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del  -->
 
 
@@ -161,7 +166,7 @@
 					<div class="row">
 					  <div class="col-md-5 col-sm-5"><label for="emiTarjeVehi" class="controllabel hidden-xs">Fecha de Emisi&#243n de tarjeta</label> </div>
 					  <div class="col-md-3 col-sm-3"><input title="Ingrese Fecha"type="date" class="form-control" size="20" id="emiTarjeVehi"
-									value="dd/mm/aaaa" placeholder="Fecha de Emision de la tarjeta"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"required/></div>
+									value="dd/mm/aaaa" placeholder="Fecha de Emision de la tarjeta"  onfocus="cambiarColor(this)" onBlur="defectoColor (this)"></div>
 					</div><!--Fin del  -->
 
 									
